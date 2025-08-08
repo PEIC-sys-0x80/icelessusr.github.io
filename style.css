@@ -218,29 +218,32 @@ body {
 }
 
 .code-area {
-    position: relative;
+    display: flex;
+    align-items: center;
     background-color: #1e1e2f;
     border-radius: 8px;
-    padding: 2px 16px;
+    padding: 4px;
+    height: 32px;
     font-family: "SF Mono", "Menlo", "Monaco", "Consolas", monospace;
-    color: #e0e0e0;
+    color: #ffffff;
     overflow-x: auto;
 }
 
-.code-area pre {
-    padding-right: 48px;
+.code-area code {
+    margin: auto;
+    padding: 0 8px;
+    font-size: 12px;
+    line-height: 0;
+    font-weight: bold;
 }
 
 .copy-btn {
-    position: absolute;
     color: white;
     background-size: 16px 16px;
+    margin: 8px;
     width: 16px;
     height: 16px;
     border: none;
     cursor: pointer;
-    font-size: 14px;
     z-index: 2;
-    top: 12px;
-    right: 12px;
 }
