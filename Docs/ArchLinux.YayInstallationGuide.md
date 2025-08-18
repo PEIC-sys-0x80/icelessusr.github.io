@@ -1,5 +1,7 @@
 # Yay Installation Guide
 
+Yay stands for “Yet Another Yogurt” — a popular AUR helper for Arch Linux. It’s basically a tool that automates installing, updating, and removing packages from both the official Arch repos and the [AUR (Arch User Repository)](https://aur.archlinux.org/).
+
 ## 1. Install Requirements
 
 Install requirements for Yay Installation by `pacman`:
