@@ -46,7 +46,6 @@ Second, configure the EFI Partition:
 ```bash
 mkpart ESP fat32 1MiB 301MiB
 set 1 esp on
-set 1 boot on
 ```
 
 Third, configure the MSR Partition:
