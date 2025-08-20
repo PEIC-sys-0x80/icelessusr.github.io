@@ -44,21 +44,21 @@ mklabel gpt
 Second, configure the EFI Partition:
 
 ```bash
-mkpart ESP fat32 1MiB 301MiB
+mkpart EFI fat32 1MiB 301MiB
 set 1 esp on
 ```
 
 Third, configure the MSR Partition:
 
 ```bash
-mkpart msr 301MiB 317MiB
+mkpart Recovery 301MiB 317MiB
 set 2 msftres on
 ```
 
 Next, configure the Windows Root Partition:
 
 ```bash
-mkpart primary ntfs 317MiB 100%
+mkpart Windows ntfs 317MiB 100%
 set 3 msftdata on
 ```
 
