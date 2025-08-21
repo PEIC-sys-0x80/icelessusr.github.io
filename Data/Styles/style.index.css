@@ -1,12 +1,3 @@
-body {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1000px;
-    background-color: #242336;
-    color: white;
-    font-family: "SF Pro Display";
-}
-
 .under-banner {
     position: absolute;
     top: 23vh;
@@ -23,7 +14,7 @@ body {
     top: -8vh;
     width: 100px;
     height: 100px;
-    background-image: url("Data/Images/pfp.png");
+    background-image: url("/Data/Images/pfp.png");
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -32,7 +23,7 @@ body {
 }
 
 .banner {
-    background-image: url("Data/Images/banner.png");
+    background-image: url("/Data/Images/banner.iceless.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -141,7 +132,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
     text-align: center;
     text-justify: center;
     line-height: 0px;
@@ -206,7 +196,6 @@ body {
 }
 
 .contact-link {
-    text-decoration: none;
     color: black;
     display: flex;
     align-items: center;
@@ -215,35 +204,4 @@ body {
     height: 32px;
     border-radius: 8px;
     background-color: #ffffff;
-}
-
-.code-area {
-    display: flex;
-    align-items: center;
-    background-color: #1e1e2f;
-    border-radius: 8px;
-    padding: 4px;
-    height: 32px;
-    font-family: "SF Mono", "Menlo", "Monaco", "Consolas", monospace;
-    color: #ffffff;
-    overflow-x: auto;
-}
-
-.code-area code {
-    margin: auto;
-    padding: 0 8px;
-    font-size: 12px;
-    line-height: 0;
-    font-weight: bold;
-}
-
-.copy-btn {
-    color: white;
-    background-size: 16px 16px;
-    margin: 8px;
-    width: 16px;
-    height: 16px;
-    border: none;
-    cursor: pointer;
-    z-index: 2;
 }

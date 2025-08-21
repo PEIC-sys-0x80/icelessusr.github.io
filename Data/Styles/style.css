@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #242336;
+    font-family: "SF Pro Display";
+}
+
+* {
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background-color: #393855;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.navcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    gap: 8px;
+}
+
+.navcontent h4 {
+    color: white;
+}
+
+.navexit {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.navicon {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+}
+
+.navitem {
+    color: gray;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1000px;
+    color: white;
+}
+
+.code-area {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e2f;
+    border-radius: 8px;
+    padding: 4px;
+    height: 32px;
+    font-family: "SF Mono", "Menlo", "Monaco", "Consolas", monospace;
+    color: #ffffff;
+    overflow-x: auto;
+}
+
+.code-area code {
+    margin: auto;
+    padding: 0 8px;
+    font-size: 12px;
+    line-height: 0;
+    font-weight: bold;
+}
+
+.copy-btn {
+    color: white;
+    background-size: 16px 16px;
+    margin: 8px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
