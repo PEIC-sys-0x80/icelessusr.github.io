@@ -1,0 +1,203 @@
+.under-banner {
+    position: absolute;
+    top: 23vh;
+    width: 100%;
+    max-width: 1000px;
+    height: 25vh;
+    background-color: #242336;
+    border-radius: 2.5vh;
+    z-index: 0;
+}
+
+.pfp {
+    position: absolute;
+    top: -8vh;
+    width: 100px;
+    height: 100px;
+    background-image: url("/Data/Images/pfp.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: white;
+}
+
+.banner {
+    background-image: url("/Data/Images/banner.iceless.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25vh;
+    filter: blur(5px);
+    z-index: -100;
+}
+
+.banner-blur {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.main-content p {
+    color: #8c8c8c;
+}
+
+.main-content h2 {
+    margin-top: 32px;
+}
+
+.tags {
+    display: inline-flex;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    vertical-align: top;
+    width: 100%;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    height: 36px;
+    background-color: black;
+    padding: 0px 12px 4px 12px;
+    text-justify: center;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-justify: center;
+    border: 2px solid #8c8c8c;
+}
+
+.tag p {
+    color: white;
+    font-size: 16px;
+    line-height: 0px;
+}
+
+.tag div {
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    margin-right: 8px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.project {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    position: relative;
+}
+
+.project-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    backdrop-filter: blur(1000px);
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.project-bottom a {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 72px;
+    height: 32px;
+    background-color: #0077FF;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    line-height: 0px;
+    color: white;
+}
+
+.project-bottom h4 {
+    padding-left: 64px;
+    padding-top: 4px;
+    margin-bottom: 14px;
+}
+
+.project-bottom p {
+    margin-top: 0;
+    padding-left: 64px;
+    color: #8c8c8c;
+    font-size: 12px;
+}
+
+.project-bottom div {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    background-size: cover;
+    background-position: center;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 40px;
+}
+
+.contact {
+    width: 100%;
+    height: 120px;
+    border-radius: 12px;
+    display: flex;
+    background-color: #8c8c8c;
+    border: 2px solid #8c8c8c;;
+    position: relative;
+}
+
+.contact-icon {
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    background-position: center;
+    margin: 16px;
+}
+
+.contact-area {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.contact-link {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
