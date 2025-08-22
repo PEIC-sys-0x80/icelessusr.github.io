@@ -1,6 +1,6 @@
 * [Home](Docs.Home.md)
 * Arch Linux
   * [Installation Guide](ArchLinux.InstallationGuide.md)
-  * [Yay Installation Guide](ArchLinux.YayInstallationGuide.md)
+  * [Customizing](ArchLinux.Customizing.md)
 * Windows
   * [Installation Guide](Windows.InstallationGuide.md)
