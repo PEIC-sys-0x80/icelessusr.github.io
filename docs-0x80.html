@@ -6,21 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="Data/Styles.0x80/fonts.css">
-  <link rel="stylesheet" href="Data/Styles.0x80/docsify.dark.css">
-  <link rel="stylesheet" href="Data/Styles.0x80/style.docs.css">
-  <link rel="stylesheet" href="Data/Styles.0x80/style.css">
+  <link rel="stylesheet" href="Data/Styles/Style.0x80.css">
 </head>
 <body>
   <div class="navbar">
     <div class="navcontent">
       <h4>PEIC-DocsHub</h4>
     </div>
-    <a href="/">
-      <div class="navexit" style="background-image: url('Data/Icons/action.exit.svg');"></div>
-    </a>
   </div>
   <div id="app"></div>
+  <button id="themeSwitcher">☀️</button>
   <script>
     window.$docsify = {
       name: '',
@@ -29,11 +24,14 @@
       subMaxLevel: 2,
       auto2top: true,
       homepage: 'Docs.Home.0x80.md',
-      basePath: 'Data/Docs-zh'
-      //offline test basePath: Data/Docs-zh
-      //git page full url: https://raw.githubusercontent.com/icelessusr/icelessusr.github.io/master/Data/Docs-zh
+      basePath: 'Data/Docs.0x80'
+      //offline test basePath: Data/Docs.0x80
+      //git page full url: https://raw.githubusercontent.com/icelessusr/icelessusr.github.io/master/Data/Docs.0x80
     }
   </script>
+  
   <script src="Data/Scripts.0x80/docsify.js"></script>
+  <script src="Data/Scripts.0x80/themeswitch.js"></script>
+  <script type="text/javascript" color="103, 141, 221" opacity="3" zIndex="-2" count="400" src="Data/Scripts.0x80/canvas-nest.min.js"></script>
 </body>
 </html>
