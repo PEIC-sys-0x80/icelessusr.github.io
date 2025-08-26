@@ -1,0 +1,29 @@
+{
+    "watercup": {
+        "name": "Watercup Server",
+        "description": "Minecraft Server",
+        "title": "Your Another Home",
+        "subtitle": "Watercup Server runs for players which are friends to each other",
+        "action": "GET STARTED",
+        "url": "watercup.html",
+        "color": "#237488"
+    },
+    "badice": {
+        "name": "Badice",
+        "description": "File Server",
+        "title": "No More Tabs",
+        "subtitle": "Badice collects a lot of files, packages, you don't have to spend your time searching anymore",
+        "action": "TRY NOW",
+        "url": "badice.html",
+        "color": "#000000"
+    },
+    "docs": {
+        "name": "IcelessDocs",
+        "description": "Docs Server",
+        "title": "The Next Level of Docs",
+        "subtitle": "Read the most detail docs to start learning something in a suprt-fast and powerful way",
+        "action": "GET STARTED",
+        "url": "docs.html",
+        "color": "#BF00FF"
+    }
+}

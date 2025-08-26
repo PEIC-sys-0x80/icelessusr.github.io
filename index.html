@@ -35,43 +35,9 @@
                 </div>
             </div>
             <h2>Here's my projects</h2>
-            <div class="projects">
-                <div class="project" style="background-image: url('Data/Images/project.watercup.banner.png')">
-                    <div class="project-bottom">
-                        <div style="background-image: url('Data/Icons/icon.watercup.png');"></div>
-                        <h4>WATERCUP Server</h4>
-                        <p>A Friendly Minecraft Server</p>
-                        <a href="watercup.html"><h5>VIEW</h5></a>
-                    </div>
-                </div>
-                <div class="project" style="background-image: url('Data/Images/project.badice.banner.png')">
-                    <div class="project-bottom">
-                        <div style="background-image: url('Data/Icons/icon.badice-dark.svg');"></div>
-                        <h4 style="color: black;">Badice</h4>
-                        <p>A Super-fast File Server</p>
-                        <a href="badice.html"><h5>VIEW</h5></a>
-                    </div>
-                </div>
-                <div class="project" style="background-image: url('Data/Images/project.docs.banner.png')">
-                    <div class="project-bottom">
-                        <div style="background-image: url('Data/Icons/icon.docs.svg');"></div>
-                        <h4 style="color: rgb(255, 255, 255);">Docs</h4>
-                        <p>Docs written by me</p>
-                        <a href="docs.html"><h5>VIEW</h5></a>
-                    </div>
-                </div>
-            </div>
+            <div class="projects" id="projects-mine"></div>
             <h2>PEIC's Projects</h2>
-            <div class="projects">
-                <div class="project" style="background-image: url('Data/Images/project.docs-0x80.png');">
-                    <div class="project-bottom">
-                        <div style="background-image: url('Data/Icons/icon.docs-0x80.svg');"></div>
-                        <h4 style="color: white;">Docs 0x80</h4>
-                        <p>Docs written by peic_sys_0x80</p>
-                        <a href="docs-0x80.html"><h5>VIEW</h5></a>
-                    </div>
-                </div>
-            </div>
+            <div class="projects" id="projects-peic"></div>
             <h2>Contact me</h2>
             <div class="contacts">
                 <div class="contact">
@@ -120,5 +86,13 @@
             </div>
         </div>
     </div>
+    <script type="module">
+        import { ProjectsHTMLFromURL } from '/Data/Scripts/projects.js';
+        
+        ProjectsHTMLFromURL('/Data/Projects/mine.json')
+            .then(html => document.getElementById('projects-mine').innerHTML = html);
+        ProjectsHTMLFromURL('/Data/Projects/peic.json')
+            .then(html => document.getElementById('projects-peic').innerHTML = html);
+    </script>
 </body>
 </html>
