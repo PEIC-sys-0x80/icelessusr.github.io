@@ -19,10 +19,10 @@
   --h3-color: #201e3dcb;
   --h4-bg: rgba(177, 223, 253, 0.685);
   --h4-color: #3b26b3cb;
-  --strong-color:rgb(77, 116, 243);
-  --blockq-bg: #102dd19c;
-  --blockq-color: rgb(179, 221, 255);
-  --blockq-left: #3d3488 ;
+  --strong-color:rgb(143, 75, 233);
+  --blockq-bg: rgba(88, 179, 231, 0.541);
+  --blockq-color: rgb(109, 56, 253);
+  --blockq-left: #4a09e0 ;
 
   --navbar-color: rgb(125, 137, 204);
 
@@ -68,6 +68,8 @@
   --content-color: rgb(2, 89, 170);
 
   --sidebar-toggle-span-bg-c: #4eeaff;
+
+  --progress-bg-c: #45da77;
   
   /*尚未修改的色碼*/
   
@@ -87,7 +89,7 @@
   --sidebar-hover--webkit-scrollbar-track: rgba(136,136,136,0.1);
   
   
-  --progress-bg-c: #ea6f5a;
+
   --search-cc:#ea6f5a;
   
   --app-nav-c: #ea6f5a;
@@ -170,6 +172,8 @@
 
   --sidebar-toggle-span-bg-c: #34e64c;
   
+  --progress-bg-c: #5a9dea;
+
   /*尚未修改的色碼*/
   
   --button-bg: #0077FF;
@@ -188,8 +192,8 @@
   --sidebar-hover--webkit-scrollbar-track: rgba(136,136,136,0.1);
   
   
-  --progress-bg-c: #ea6f5a;
-  --search-cc:#ea6f5a;
+
+  --search-cc:#5ad9ea;
   
   --app-nav-c: #ea6f5a;
   --github-corner-svg-c: #3f3f3f;
@@ -951,6 +955,7 @@ span.emoji {
 }
 .progress {
   background-color: var(--progress-bg-c);
+  color: var(--progress-bg-c);
   height: 2px;
   left: 0px;
   position: fixed;

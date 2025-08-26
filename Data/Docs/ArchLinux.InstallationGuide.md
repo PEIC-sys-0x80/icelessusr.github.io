@@ -163,7 +163,7 @@ Look for these words in the editor:
 Usually at the end of the file you're editing, and then uncomment:
 
 ```
-# %wheel ALL=(ALL:ALL) ALL
+%wheel ALL=(ALL:ALL) ALL
 ```
 
 Now, save and exit the editor with `Ctrl` + `O`, `Enter`, and then `Ctrl` + `X`.
@@ -195,7 +195,7 @@ pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils
 You can custom your hostname by:
 
 ```bash
-echo "YourHost"
+echo "YourHost" > /etc/hostname
 ```
 
 ### 9-7. Install UEFI and GRUB
