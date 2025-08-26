@@ -3,4 +3,4 @@
 
 此版面為DocsHub中文版，由**靛夜子洛**維護awa
 
-這裡會放一些中文的教學文或技術文件，也會拿 icelessdocs文件來翻譯awa
+這裡會放一些中文的教學文或技術文件，也會拿 IcelessDocs文件來翻譯awa
