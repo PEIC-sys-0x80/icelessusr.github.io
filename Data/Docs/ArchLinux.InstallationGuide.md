@@ -195,7 +195,7 @@ pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils
 You can custom your hostname by:
 
 ```bash
-echo "YourHost"
+echo "YourHostName" > /etc/hostname
 ```
 
 ### 9-7. Install UEFI and GRUB
