@@ -2,9 +2,9 @@
     "docs-0x80": {
         "name": "PEIC DocsHub",
         "description": "Docs Server",
-        "title": "",
-        "subtitle": "",
-        "action": "",
+        "title": "繁中▓極致",
+        "subtitle": "這裡提供了一些全中文的超詳細技術文件與IcelessDocs的中文翻譯版本，即使是沒有英文基礎也能閱讀與學習!",
+        "action": "馬上開始",
         "url": "docs-0x80.html",
         "color": "rgba(108, 56, 253, 0.548)"
     }
