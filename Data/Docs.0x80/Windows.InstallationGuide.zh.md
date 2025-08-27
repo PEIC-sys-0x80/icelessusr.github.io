@@ -31,9 +31,9 @@ pacman -S ntfs-3g wimlib dosfstools
 ## 2. 分區建立與格式化
 
 以下是必要的分區:
-- EFI (ESP, boot, about 300MiB)
-- Microsoft Recovery (MSR, msftres, about 16MiB)
-- Windows Root (NTFS, msftdata, at least 32GiB for newer versions)
+- **EFI** 開機分區 (ESP, boot, 大約 300MiB)
+- **Microsoft Recovery** (MSR, msftres, 大約 16MiB)
+- **Windows Root** (NTFS, msftdata, 如果是較新的版本，至少需要32GiB)
 
 ### 分區
 
@@ -45,7 +45,7 @@ parted /dev/(你的硬碟代號)
 
 此時它會開啟一個shell，接下來的指令都需要在這個shell中執行。
 
-首先，先在這個硬碟中建立GPT標籤。
+然後，先在這個硬碟中建立GPT標籤。
 
 ```bash
 mklabel gpt
@@ -157,7 +157,7 @@ umount /(你的ISO掛載路徑)
 umount /(你的Windows root掛載路徑)
 ```
 
-## 4. Install EFI
+## 4. 安裝 EFI
 
 > 注意: 以上操作只有建立分區與刷入windows，但還沒有安裝EFI，目前也沒有辦法直接用Linux來給windows安裝EFI。
 
@@ -169,7 +169,7 @@ umount /(你的Windows root掛載路徑)
 
 在 Windows PE 的CMD中輸入以下指令:
 
-```bash
+```cmd
 bcdboot X:\Windows /s Y: /f UEFI 
 ```
 
