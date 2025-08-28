@@ -121,17 +121,17 @@ To get and install directly to SideStore, run [iDevicePair](https://github.com/j
 
 Select your device from the top menu, and click **Generate**.
 
-<img src="Data/DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.GeneratePairingFile.png" width="100%" height="auto">
+![](../DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.GeneratePairingFile.png)
 
 If there's no device found like this
 
-![](/Data/DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.NoDeviceFound.png)
+![](../DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.NoDeviceFound.png)
 
 Please check your connection between your pc and device, and then click **Refresh**.
 
 After generating, scroll down to the SideStore area and click **Install**.
 
-![](/Data/DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.InstallToSideStore.png)
+![](../DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.InstallToSideStore.png)
 
 Now, your SideStore is completely installed on your device!
 
