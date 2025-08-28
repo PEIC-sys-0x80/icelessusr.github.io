@@ -24,7 +24,7 @@
   --blockq-color: rgb(109, 56, 253);
   --blockq-left: #4a09e0 ;
   
-  --navbar-color: rgb(125, 137, 204);
+  --navbar-color: rgba(131, 152, 248, 0.623);
 
   --sidebar-bg: #6db6f1a2;
   --sidebar-color: rgb(164, 119, 236);
@@ -67,7 +67,7 @@
 
   --content-color: rgb(2, 89, 170);
 
-  --sidebar-toggle-span-bg-c: #4eeaff;
+  --sidebar-toggle-span-bg-c: #7b4ceb;
 
   --progress-bg-c: #45da77;
 
@@ -76,7 +76,7 @@
     /*card-color*/
     --business-card-container-bg: #3aaadd91;
     --business-card-container-border: #45bbd8;
-    --avatar-image-border: #7523e0cc;
+    --avatar-image-border: #828af3;
     --name-color: #111827;
     --bio-color: #4b5563;
     /*card-color*/
@@ -811,7 +811,7 @@ transform: scale(1.05);
 
 .markdown-section hr {
   border: none;
-  border-bottom: 1px solid var(--yeee);
+  border-bottom: 1px solid var(--hr-color);
   margin: 2em 0;
 }
 
