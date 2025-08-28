@@ -121,7 +121,7 @@ To get and install directly to SideStore, run [iDevicePair](https://github.com/j
 
 Select your device from the top menu, and click **Generate**.
 
-![](/Data/DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.GeneratePairingFile.png)
+<img src="Data/DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.GeneratePairingFile.png" width="100%">
 
 If there's no device found like this
 
