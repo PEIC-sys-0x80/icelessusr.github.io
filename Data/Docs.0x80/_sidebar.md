@@ -12,6 +12,7 @@
     - [Latex語法](LaTex.md)
 
 - **Arch Linux**
-    - [Arch Linux安裝指南](ArchLinux.InstallationGuide.zh.md)
+    - [Arch Linux安裝指南](Arch-install-g.md)
+    - [客製化Arch Linux](arch-customizing.md)
 - **Windows**
-    - [用linux安裝windows的安裝指南](Windows.InstallationGuide.zh.md)
+    - [用linux安裝windows的安裝指南](Windows-install-g.md)
