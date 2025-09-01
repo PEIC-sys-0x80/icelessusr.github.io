@@ -104,3 +104,9 @@ pacman -S noto-fonts-cjk-sc
 ```bash
 pacman -S noto-fonts-cjk-kr
 ```
+
+只安裝日文:
+
+```bash
+pacman -S noto-fonts-cjk-jp
+```
