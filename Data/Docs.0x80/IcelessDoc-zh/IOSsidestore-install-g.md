@@ -137,17 +137,17 @@ ALTSERVER_ANISETTE_SERVER="http://127.0.0.1:6969" ./AltServer -u "UUID" -a "Appl
 
 從頂部選單選擇你的裝置，然後點**生成**(Generate)。
 
-![yeeeee](../DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.GeneratePairingFile.png)
+![yeeeee](../../DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.GeneratePairingFile.png)
 
 然後如果沒有找到裝置，像這樣:
 
-![yeeeeeeee!!!](../DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.NoDeviceFound.png)
+![yeeeeeeee!!!](../../DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.NoDeviceFound.png)
 
 那請檢查你的裝置與電腦之間的連接是否正常，然後按 **刷新**(Refresh)。
 
 生成完後，滑到下面SideStore的區域，然後按 **安裝**(Install)。
 
-![yeeeeeeeeeeeeee!!!!!!!!!](../DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.InstallToSideStore.png)
+![yeeeeeeeeeeeeee!!!!!!!!!](../../DocAttachments/iOS.SideStoreInstallationGuide.iDevicePair.InstallToSideStore.png)
 
 現在，你的SideStore就已經成功安裝了!
 
