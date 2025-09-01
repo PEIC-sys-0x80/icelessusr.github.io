@@ -62,7 +62,7 @@ pacman -S fcitx5-configtool fcitx5-gtk fcitx5-qt
 ### IME插件
 - **中文繁體「新酷音」**: `fcitx5-chewing`
 - **中文簡體 「中文拼音」**: `fcitx5-pinyin`
-- **日文 「Romaji」**: `fcitx5-mozc`
+- **日語羅馬字**: `fcitx5-mozc`
 
 ## 字體
 
@@ -103,4 +103,10 @@ pacman -S noto-fonts-cjk-sc
 
 ```bash
 pacman -S noto-fonts-cjk-kr
+```
+
+只安裝日文:
+
+```bash
+pacman -S noto-fonts-cjk-jp
 ```
