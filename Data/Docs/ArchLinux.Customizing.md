@@ -97,3 +97,9 @@ To install Korean only
 ```bash
 pacman -S noto-fonts-cjk-kr
 ```
+
+To install Japanese only
+
+```bash
+pacman -S noto-fonts-cjk-jp
+```
