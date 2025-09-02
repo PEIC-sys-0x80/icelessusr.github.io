@@ -1,6 +1,6 @@
-# IOS側載APP商店(Sidestore)安裝指南
+# iOS側載APP商店(Sidestore)安裝指南
 
-#IOS #IOS側載 #IOS第三方商店
+#iOS #iOS側載 #iOS第三方商店
 
 >**此文件翻譯自IcelessDocs。**
 >

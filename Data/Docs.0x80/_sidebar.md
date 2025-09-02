@@ -43,5 +43,5 @@
     - [客製化Arch Linux](IcelessDoc-zh/arch-customizing.md)
 - **Windows**
     - [用linux安裝windows的安裝指南](IcelessDoc-zh/Windows-install-g.md)
-- **Mac/IOS**
-    - [IOS側載APP商店(Sidestore)安裝指南](IcelessDoc-zh/IOSsidestore-install-g.md)
+- **Mac & iOS**
+    - [iOS側載APP商店(Sidestore)安裝指南](IcelessDoc-zh/iOSsidestore-install-g.md)
