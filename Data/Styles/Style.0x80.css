@@ -347,7 +347,6 @@ body {
 }
 
 .markdown-section h1,
-.markdown-section h1 a,
 h1 {
   font-family: Arial, sans-serif;
   border-radius: 8px;
@@ -360,7 +359,6 @@ h1 {
 }
 
 .markdown-section h2,
-.markdown-section h2 a,
 h2 {
   font-family: Arial, sans-serif;
   border-radius: 8px;
@@ -374,7 +372,6 @@ h2 {
 
 
 .markdown-section h3,
-.markdown-section h3 a,
 h3 {
   font-family: Arial, sans-serif;
   border-radius: 8px;
@@ -387,7 +384,6 @@ h3 {
 }
 
 .markdown-section h4,
-.markdown-section h4 a,
 h4 {
   font-family: Arial, sans-serif;
   border-radius: 8px;
@@ -414,9 +410,31 @@ h4 {
 .markdown-section h2,
 .markdown-section h3,
 .markdown-section h4,
+h1,h2,h3,h4,h5,h6,
 .markdown-section strong {
   font-weight: 600;
+  word-break:break-all; /*自動換行*/
 }
+
+.markdown-section h1 a{
+  color:  var(--h1-color) ;
+  word-break:break-all;
+}
+.markdown-section h2 a{
+  color:  var(--h2-color) ;
+  word-break:break-all;
+}
+.markdown-section h3 a{
+  color:  var(--h3-color) ;
+  word-break:break-all;
+}
+.markdown-section h4 a{
+  color:  var(--h4-color) ;
+  word-break:break-all;
+}
+
+
+
 
 
 .anchor {
