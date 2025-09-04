@@ -1,10 +1,12 @@
+- 首頁
+    - [PEIC-Docs-Hub首頁](Docs.Home.0x80.md)
 
+---
 - **Debug**
     - [測試頁面](dex.md)
 
 ---
 - 文件
-    - [PEIC-Docs-Hub首頁](Docs.Home.0x80.md)
 
 - **程式語言常用語法**
     - [C++基本語法](programing-L/cpp.md)
@@ -43,5 +45,5 @@
     - [客製化Arch Linux](IcelessDoc-zh/arch-customizing.md)
 - **Windows**
     - [用linux安裝windows的安裝指南](IcelessDoc-zh/Windows-install-g.md)
-- **Mac/IOS**
-    - [IOS側載APP商店(Sidestore)安裝指南](IcelessDoc-zh/IOSsidestore-install-g.md)
+- **Mac & iOS**
+    - [iOS側載APP商店(Sidestore)安裝指南](IcelessDoc-zh/iOSsidestore-install-g.md)
