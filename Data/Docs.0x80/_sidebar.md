@@ -46,4 +46,4 @@
 - **Windows**
     - [用linux安裝windows的安裝指南](IcelessDoc-zh/Windows-install-g.md)
 - **Mac & iOS**
-    - [iOS側載APP商店(Sidestore)安裝指南](IcelessDoc-zh/iOSsidestore-install-g.md)
+    - [iOS側載APP商店(Sidestore)安裝指南](IcelessDoc-zh/iOSsidestore-ins-g.md)
