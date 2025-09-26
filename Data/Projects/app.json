@@ -1,0 +1,20 @@
+{
+    "discord": {
+        "name": "Discord",
+        "description": "Internet Messenger",
+        "title": "Discord",
+        "subtitle": "Discord is a wonderful Internet messenger for developers, gamers, or just for a afternoon tea.",
+        "action": "GRAB A COFFEE",
+        "url": "https://discord.com/",
+        "color": "#5865F2"
+    },
+    "x": {
+        "name": "X",
+        "description": "Social",
+        "title": "Happening now",
+        "subtitle": "From breaking news and entertainment to sports and politics, get the full story with all the live commentary.",
+        "action": "JOIN TODAY",
+        "url": "https://x.com/",
+        "color": "#000000"
+    }
+}

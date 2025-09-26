@@ -12,7 +12,7 @@ async function ProjectHTML(name, description, title, subtitle, action, url, icon
                 <div class="project-icon" style="background-image: url('${iconPath}');"></div>
                 <h4 class="project-name">${name}</h4>
                 <p class="project-description">${description}</p>
-                <a class="project-view" href="${url}">VIEW</a>
+                <a class="project-view" rel="nofollow noreferrer noopener" target="_blank" href="${url}">VIEW</a>
             </div>
         </div>
     `;
@@ -29,8 +29,8 @@ async function ProjectsHTML(projects) {
             project.subtitle,
             project.action,
             project.url,
-            `Data/Icons/icon.${id}.svg`,
-            `Data/Images/project.${id}.banner.png`,
+            project.icon || `Data/Icons/icon.${id}.svg`,
+            project.banner || `Data/Images/project.${id}.banner.png`,
             project.color
         );
     }

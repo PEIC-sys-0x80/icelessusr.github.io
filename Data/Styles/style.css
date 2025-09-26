@@ -91,11 +91,11 @@ body {
 .code-area {
     display: flex;
     align-items: center;
-    background-color: #1e1e2f;
+    background-color: rgba(0,0,0,0.7);
     border-radius: 8px;
     padding: 4px;
     height: 32px;
-    font-family: "SF Mono", "Menlo", "Monaco", "Consolas", monospace;
+    font-family: "SF Mono";
     color: #ffffff;
     overflow-x: auto;
 }

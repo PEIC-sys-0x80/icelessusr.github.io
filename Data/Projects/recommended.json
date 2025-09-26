@@ -1,0 +1,33 @@
+{
+    "sidestore": {
+        "name": "SideStore",
+        "description": "iOS Sideloading",
+        "title": "No AltServer Anymore",
+        "subtitle": "SideStore is a fork of AltStore but no longer requires PC to refresh/install .ipa files.",
+        "action": "GET STARTED",
+        "url": "docs.html#/iOS.SideStoreInstallationGuide",
+        "color": "#889efd",
+        "icon": "/Data/Icons/icon.sidestore.jpg"
+    },
+    "archlinux": {
+        "name": "Arch Linux",
+        "description": "Operating System",
+        "title": "The New Generation to Linux",
+        "subtitle": "Arch Linux is lightweight linux distro with rolling package system, fully customized installation.",
+        "action": "CUSTOMIZE",
+        "url": "docs.html#/ArchLinux.InstallationGuide",
+        "color": "#2596be",
+        "icon": "/Data/Icons/icon.archlinux.png",
+        "banner": "/Data/Images/project.archlinux.banner.jpeg"
+    },
+    "dockur-windows": {
+        "name":"dockurr/windows",
+        "description": "Docker Container",
+        "title": "Windows, but on Docker",
+        "subtitle": "dockur/windows is a github repository for running Windows vm via QEMU on a docker container",
+        "action": "GET STARTED",
+        "url": "https://github.com/dockur/windows",
+        "color": "#097bd8",
+        "banner": "/Data/Images/project.dockur-windows.banner.jpg"
+    }
+}
