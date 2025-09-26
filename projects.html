@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/Data/Styles/style.css">
+    <link rel="stylesheet" href="/Data/Styles/fonts.css">
+    <link rel="stylesheet" href="/Data/Styles/style.projects.css">
+    <link rel="stylesheet" href="/Data/Styles/projects.css">
+</head>
+
+<body>
+    <div class="content" style="max-width: 1450px;">
+        <div class="navbar">
+            <div id="navcontrol" class="navcontent">
+                <h4>Projects</h4>
+            </div>
+            <a href="/">
+                <div class="navexit" style="background-image: url('Data/Icons/action.exit.svg');"></div>
+            </a>
+        </div>
+        <div class="main-content">
+            <h2 style="margin-top: 32px;">My Projects</h2>
+            <div class="projects" id="projects-mine"></div>
+            <h2 style="margin-top: 32px;">PEIC Projects</h2>
+            <div class="projects" id="projects-peic"></div>
+            <h2 style="margin-top: 32px;">Recommended Projects</h2>
+            <div class="projects" id="projects-recommended"></div>
+            <h2 style="margin-top: 32px;">Wonderful Applications</h2>
+            <div class="projects" id="projects-app"></div>
+        </div>
+    </div>
+    <script type="module">
+        import { ProjectsHTMLFromURL } from '/Data/Scripts/projects.js';
+
+        ProjectsHTMLFromURL('/Data/Projects/mine.json')
+            .then(html => document.getElementById('projects-mine').innerHTML = html);
+        
+        ProjectsHTMLFromURL('/Data/Projects/recommended.json')
+            .then(html => document.getElementById('projects-recommended').innerHTML = html);
+
+        ProjectsHTMLFromURL('/Data/Projects/app.json')
+            .then(html => document.getElementById('projects-app').innerHTML = html);
+
+        ProjectsHTMLFromURL('/Data/Projects/peic.json')
+            .then(html => document.getElementById('projects-peic').innerHTML = html);
+    </script>
+</body>
+
+</html>
