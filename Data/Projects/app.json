@@ -16,5 +16,14 @@
         "action": "JOIN TODAY",
         "url": "https://x.com/",
         "color": "#000000"
+    },
+    "duolingo": {
+        "name": "Duolingo",
+        "description": "Language Learning",
+        "title": "Free, Fun, Effective.",
+        "subtitle": "Learning with Duolingo is fun, and research shows that it works! With quick, bite-sized lessons, you’ll earn points and unlock new levels while gaining real-world communication skills.",
+        "action": "JOIN TODAY",
+        "url": "https://duolingo.com/",
+        "color": "#50C800"
     }
 }

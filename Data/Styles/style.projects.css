@@ -6,6 +6,6 @@
     flex-wrap: wrap;
 }
 
-.project {
-    max-width: 400px;
+.main-content {
+    animation: fade-in-left 0.6s ease-in-out;
 }

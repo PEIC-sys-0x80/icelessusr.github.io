@@ -21,7 +21,7 @@
         "banner": "/Data/Images/project.archlinux.banner.jpeg"
     },
     "dockur-windows": {
-        "name":"dockurr/windows",
+        "name":"dockur/windows",
         "description": "Docker Container",
         "title": "Windows, but on Docker",
         "subtitle": "dockur/windows is a github repository for running Windows vm via QEMU on a docker container",
