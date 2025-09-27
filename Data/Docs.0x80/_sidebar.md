@@ -36,6 +36,10 @@
     - [cat](terminal-command/linux-cat.md)
     - [dd](terminal-command/dd.md)
 
+- **Respberry-Pi**
+    - [Respberry Pi OS 安裝指南](Respberry-Pi-OS-ins.md)
+
+
 ---
 
 - **IcelessDocs的中文翻譯**
@@ -46,4 +50,4 @@
 - **Windows**
     - [用linux安裝windows的安裝指南](IcelessDoc-zh/Windows-install-g.md)
 - **Mac & iOS**
-    - [iOS側載APP商店(Sidestore)安裝指南](IcelessDoc-zh/iOSsidestore-install-g.md)
+    - [iOS側載APP商店(Sidestore)安裝指南](IcelessDoc-zh/iOSsidestore-ins-g.md)
