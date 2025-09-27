@@ -93,6 +93,10 @@
     font-size: 14px;
 }
 
+.project-view:hover {
+    opacity: 0.8;
+}
+
 .project-name {
     padding-left: 64px;
     padding-top: 4px;

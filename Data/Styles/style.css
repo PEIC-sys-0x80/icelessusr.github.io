@@ -59,6 +59,10 @@ body {
     font-weight: bold;
 }
 
+.button:hover {
+    filter: opacity(0.8);
+}
+
 .navexit {
     position: absolute;
     right: 16px;
