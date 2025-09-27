@@ -20,6 +20,9 @@
     <a href="/">
       <div class="navexit" style="background-image: url('Data/Icons/action.exit.svg');"></div>
     </a>
+    <a href="#" id="back" title="Back">
+      <div class="navback" style="background-image: url('Data/Icons/action.back.svg');"></div>
+    </a>
   </div>
   <div id="app"></div>
   <script>
@@ -34,5 +37,15 @@
     }
   </script>
   <script src="Data/Scripts/docsify.js"></script>
+  <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const from = urlParams.get("from");
+      const back = document.getElementById("back")
+      back.style.display = "none";
+      if (from) {
+        back.style.display = "block";
+        back.href = from
+      }
+  </script>
 </body>
 </html>
