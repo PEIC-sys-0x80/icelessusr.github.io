@@ -58,12 +58,12 @@
 
   --hr-color: rgb(55, 3, 151);
 
-  --theme-botton-base: #0f739b;
-  --theme-botton-txtcolor:white;
-  --theme-btn-hover: #48fdd6;
+  --theme-botton-base: #0f739b9d;
+  --theme-botton-txtcolor:rgba(255, 255, 255, 0.658);
+  --theme-btn-hover: #48fdd6a8;
 
-  --title-tk: rgb(34, 5, 139);
-  --title-bg: #c2cbf1e8;
+  --title-tk: rgba(34, 5, 139, 0.596);
+  --title-bg: #c2cbf19f;
 
   --content-color: rgb(2, 89, 170);
 
@@ -171,12 +171,12 @@
 
   --hr-color: rgb(23, 211, 23);
 
-  --theme-botton-base: rgb(27, 180, 173);
-  --theme-botton-txtcolor: #fff;
-  --theme-btn-hover: #41c935;
+  --theme-botton-base: rgba(27, 180, 172, 0.726);
+  --theme-botton-txtcolor: rgba(255, 255, 255, 0.705);
+  --theme-btn-hover: #41c935a9;
 
-  --title-tk: rgb(160, 166, 248);
-  --title-bg: #300d68e8;
+  --title-tk: rgba(160, 166, 248, 0.616);
+  --title-bg: #300d68b9;
 
   --content-color: rgb(144, 196, 226);
 
@@ -706,7 +706,7 @@ hr{
 display: flex;
 align-items: center;
 position: fixed; /* 將按鈕固定在畫面上 */
-bottom: 20px; /*指定在底部20px處*/
+top: 60px; /*指定在頂部60px處*/ 
 right: 20px; /*指定在右邊20px處*/
 background-color: var(--theme-botton-base);
 color: var(--theme-botton-txtcolor);

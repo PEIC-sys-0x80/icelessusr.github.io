@@ -36,6 +36,10 @@
     - [cat](terminal-command/linux-cat.md)
     - [dd](terminal-command/dd.md)
 
+- **Respberry-Pi**
+    - [Respberry Pi OS 安裝指南](Respberry-Pi-OS-ins.md)
+
+
 ---
 
 - **IcelessDocs的中文翻譯**
