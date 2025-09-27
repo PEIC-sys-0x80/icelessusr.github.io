@@ -4,6 +4,13 @@
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .projects {
+    display: flex;
+  }
 }
 
 .main-content {
