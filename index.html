@@ -51,7 +51,7 @@
                     <div class="contact-area">
                         <div class="code-area">
                             <code>iceless.usr@gmail.com</code>
-                            <a href="#" class="copy-btn" style="background-image: url('Data/Icons/action.copy.svg');" onclick="navigator.clipboard.writeText('iceless.usr@gmail.com'); return false;" title="Copy"></a>
+                            <a href="#" class="copy-btn" style="background-image: url('Data/Icons/action.copy.svg');" onclick="copy('iceless.usr@gmail.com'); return false;" title="Copy"></a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                     <div class="contact-area">
                         <div class="code-area">
                             <code>icelessusr</code>
-                            <a href="#" class="copy-btn" style="background-image: url('Data/Icons/action.copy.svg');" onclick="navigator.clipboard.writeText('icelessusr'); return false;" title="Copy"></a>
+                            <a href="#" class="copy-btn" style="background-image: url('Data/Icons/action.copy.svg');" onclick="copy('icelessusr'); return false;" title="Copy"></a>
                         </div>
                         <a href="https://github.com/icelessusr" class="contact-link"><h4>View</h4></a>
                     </div>
@@ -72,7 +72,7 @@
                     <div class="contact-area">
                         <div class="code-area">
                             <code>IcelessUsr</code>
-                            <a href="#" class="copy-btn" style="background-image: url('Data/Icons/action.copy.svg');" onclick="navigator.clipboard.writeText('IcelessUsr'); return false;" title="Copy"></a>
+                            <a href="#" class="copy-btn" style="background-image: url('Data/Icons/action.copy.svg');" onclick="copy('IcelessUsr'); return false;" title="Copy"></a>
                         </div>
                         <a href="https://www.duolingo.com/profile/IcelessUsr" class="contact-link"><h4>View</h4></a>
                     </div>
@@ -83,13 +83,17 @@
                     <div class="contact-area">
                         <div class="code-area">
                             <code>iceless.usr</code>
-                            <a href="#" class="copy-btn" style="background-image: url('Data/Icons/action.copy.svg');" onclick="navigator.clipboard.writeText('iceless.usr'); return false;" title="Copy"></a>
+                            <a href="#" class="copy-btn" style="background-image: url('Data/Icons/action.copy.svg');" onclick="copy('iceless.usr'); return false;" title="Copy"></a>
                         </div>
                         <a href="https://discord.com/users/848868417775468564" class="contact-link"><h4>View</h4></a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="copied">
+        <div class="copied-checkmark"></div>
+        <p>Copied to clipboard!</p>
     </div>
     <script type="module">
         import { ProjectsHTMLFromURL } from '/Data/Scripts/projects.js';
@@ -99,5 +103,6 @@
         ProjectsHTMLFromURL('/Data/Projects/peic.json')
             .then(html => document.getElementById('projects-peic').innerHTML = html);
     </script>
+    <script src="/Data/Scripts/copy.js"></script>
 </body>
 </html>

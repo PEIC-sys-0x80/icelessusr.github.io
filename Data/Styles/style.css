@@ -15,11 +15,12 @@ body {
     left: 0;
     width: 100%;
     height: 32px;
-    background-color: #393855;
+    background-color: rgba(255,255,255,0.3);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 10;
+    backdrop-filter: blur(10px);
 }
 
 .navcontent {
@@ -116,7 +117,7 @@ body {
 }
 
 .code-area code {
-    margin: auto;
+    margin: 0;
     padding: 0 8px;
     font-size: 12px;
     line-height: 0;
@@ -132,4 +133,47 @@ body {
     border: none;
     cursor: pointer;
     z-index: 2;
+}
+
+#copied {
+    max-width: 400px;
+    width: 90vw;
+    height: 36px;
+    background-color: lightgreen;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 16px;
+    z-index: 1000;
+    justify-self: center;
+    border-radius: 8px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    animation: copied-animation 2s ease-in-out;
+}
+
+@keyframes copied-animation {
+    0% {
+        transform: translateY(110%);
+    }
+    15% {
+        transform: translateY(0);
+    }
+    85% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(110%);
+        display: none;
+    }
+}
+
+#copied div {
+    background-image: url("/Data/Icons/action.checkmark.svg");
+    width:  24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 4px;
 }

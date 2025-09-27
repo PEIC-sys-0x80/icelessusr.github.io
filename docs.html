@@ -37,15 +37,6 @@
     }
   </script>
   <script src="Data/Scripts/docsify.js"></script>
-  <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      const from = urlParams.get("from");
-      const back = document.getElementById("back")
-      back.style.display = "none";
-      if (from) {
-        back.style.display = "block";
-        back.href = from
-      }
-  </script>
+  <script src="Data/Scripts/back.js"></script>
 </body>
 </html>
