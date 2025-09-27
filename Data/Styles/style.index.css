@@ -144,3 +144,7 @@
     border-radius: 8px;
     background-color: rgba(255,255,255,0.5);
 }
+
+.contact-link:hover {
+    opacity: 0.8;
+}
