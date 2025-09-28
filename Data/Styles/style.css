@@ -136,21 +136,29 @@ body {
 }
 
 #copied {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 16px;
+    animation: copied-animation 2s ease-in-out;
+    z-index: 1000;
+    height: 36px;
+    width: 100%;
+}
+
+.copied-content {
     max-width: 400px;
     width: 90vw;
     height: 36px;
     background-color: lightgreen;
-    margin: 0 auto;
-    position: fixed;
-    bottom: 16px;
-    z-index: 1000;
-    justify-self: center;
     border-radius: 8px;
     display: flex;
+    position: relative;
+    margin: 0 auto;
     color: white;
     align-items: center;
     justify-content: center;
-    animation: copied-animation 2s ease-in-out;
 }
 
 @keyframes copied-animation {
@@ -171,7 +179,7 @@ body {
     }
 }
 
-#copied div {
+.copied-checkmark {
     background-image: url("/Data/Icons/action.checkmark.svg");
     width:  24px;
     height: 24px;
