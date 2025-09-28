@@ -16,7 +16,7 @@
         "action": "JOIN TODAY",
         "url": "https://x.com/",
         "color": "#000000"
-    },
+},
     "duolingo": {
         "name": "Duolingo",
         "description": "Language Learning",
