@@ -1,17 +1,66 @@
 {
-    "icethisrc": "https://dsc.gg/icethisrc",
-    "dcapp": "https://discord.app/",
-    "dc": "https://discord.com/",
-    "watercupdc": "https://dsc.gg/watercup",
-    "x": "https://x.com/",
-    "duolingo": "https://duolingo.com/",
+    "i": "/",
     "iceless": "/",
+    "icethisrc": "https://dsc.gg/icethisrc",
+    "watercupdc": "https://dsc.gg/watercup",
+    "mydc": "https://discord.com/users/848868417775468564",
+    "myduolingo": "https://www.duolingo.com/profile/iceless.usr",
+    "mygithub": "https://github.com/icelessusr",
+    "mybiosite": "https://bio.site/iceless.usr",
+    "badice": "http://watercup.ddns.net:5999/",
+    
+    "github": "https://github.com/",
+    "notion": "https://notion.com/",
+    "dc": "https://discord.com/",
+    "dcapp": "https://discord.app/",
+    "duolingo": "https://duolingo.com/",
     "archlinux": "https://archlinux.org/",
     "archlinuxarm": "https://archlinuxarm.org/",
     "xorg": "https://x.org/",
     "hyprland": "https://hypr.land/",
     "zen": "https://zen-browser.app/",
+    "win93": "https://windows93.net/",
+    "mc": "https://minecraft.net/",
+    "prismlauncher": "https://prismlauncher.org",
+    "modrinth": "https://modrinth.com/",
+    "kernel": "https://kernel.org",
+    "obsidian": "https://obsidian/",
+    "gnome": "https://gnome.org/",
+    "kde": "https://kde.org/",
+
     "flatpak": "https://flatpak.org/",
     "flathub": "https://flathub.org/",
-    "badice": "http://watercup.ddns.net:5999/"
+
+    "chatgpt": "https://chatgpt.com/",
+    "openai": "https://openai.com/",
+
+    "grok": "https://grok.com/",
+    "x": "https://x.com/",
+    "twitter": "https://x.com/",
+
+    "g": "https://google.com/",
+    "google": "https://google.com/",
+    "gtranslate": "https://translate.google.com/",
+    "gdrive": "https://drive.google.com/",
+    "gmail": "https://mail.google.com/",
+    "gacc": "https://accounts.google.com/",
+    "gplay": "https://play.google.com/",
+    "yt": "https://youtube.com/",
+
+    "a": "https://apple.com",
+    "apple": "https://apple.com/",
+    "icloud": "https://icloud.com/",
+    "appledev": "https://developer.apple.com/",
+    "appleacc": "https://account.apple.com/",
+   
+    "ms": "https://microsoft.com/",
+    "microsoft": "https://microsoft.com",
+    "vscode": "https://code.visualstudio.com/",
+
+    "fb": "https://facebook.com",
+    "ig": "https://instagram.com",
+    "th": "https://threads.com",
+    "mes": "https://messenger.com",
+
+    "ultmos": "https://github.com/Coopydood/ultimate-macOS-KVM"
 }
