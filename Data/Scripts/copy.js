@@ -7,5 +7,5 @@ function copy(text) {
     copied.style.display = "flex";
     setTimeout(() => {
         copied.style.display = "none";
-    }, "2000")
+    }, "1900")
 }
