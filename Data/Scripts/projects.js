@@ -18,7 +18,7 @@ async function ProjectHTML(name, description, title, subtitle, action, url, icon
     `;
 }
 
-async function ProjectsHTML(projects) {
+async function ProjectsHTML(projects, owner) {
     let html = '';
     for (const id in projects) {
         const project = projects[id];
@@ -28,9 +28,9 @@ async function ProjectsHTML(projects) {
             project.title,
             project.subtitle,
             project.action,
-            project.url,
-            project.icon || `Data/Icons/icon.${id}.svg`,
-            project.banner || `Data/Images/project.${id}.banner.png`,
+            owner ? `projects?focus=${owner}.${id}&from=projects` : project.url,
+            project.icon || `/Data/Icons/icon.${id}.svg`,
+            project.banner || `/Data/Images/project.${id}.banner.png`,
             project.color
         );
     }
@@ -43,4 +43,10 @@ async function ProjectsHTMLFromURL(url) {
         .then(projects => ProjectsHTML(projects));
 }
 
-export { ProjectsHTMLFromURL };
+async function ProjectsHTMLFromOwner(owner) {
+    return await fetch(`/Data/Projects/${owner}.json`)
+        .then(response => response.json())
+        .then(projects => ProjectsHTML(projects, owner));
+}
+
+export { ProjectsHTMLFromURL, ProjectsHTMLFromOwner };

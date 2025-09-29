@@ -13,18 +13,21 @@
 </head>
 
 <body>
-    <div class="content" style="max-width: none;">
-        <div class="navbar">
-            <div id="navcontrol" class="navcontent">
-                <h4>Projects</h4>
-            </div>
-            <a href="/">
-                <div class="navexit" style="background-image: url('Data/Icons/action.exit.svg');"></div>
-            </a>
+    <div class="navbar">
+        <div id="navcontrol" class="navcontent">
+            <h4 id="navname">Projects</h4>
         </div>
+        <a href="/">
+            <div class="navexit" style="background-image: url('Data/Icons/action.exit.svg');"></div>
+        </a>
+        <a href="#" id="back" title="Back">
+            <div class="navback" style="background-image: url('Data/Icons/action.back.svg');"></div>
+        </a>
+    </div>
+    <div class="content" style="max-width: none;" id="normal">
         <div class="main-content">
             <h2 style="margin-top: 32px;">My Projects</h2>
-            <div class="projects" id="projects-mine"></div>
+            <div class="projects" id="projects-iceless"></div>
             <h2 style="margin-top: 32px;">PEIC Projects</h2>
             <div class="projects" id="projects-peic"></div>
             <h2 style="margin-top: 32px;">Recommended Projects</h2>
@@ -33,21 +36,66 @@
             <div class="projects" id="projects-app"></div>
         </div>
     </div>
+    <div class="content" id="focus">
+        <div id="focus-banner"></div>
+        <div class="focus-icon-name">
+            <div id="focus-icon"></div>
+            <h3 id="focus-name"></h3>
+            <p id="focus-description"></p>
+        </div>
+        <div class="main-content">
+            
+        </div>
+    </div>
     <script type="module">
-        import { ProjectsHTMLFromURL } from '/Data/Scripts/projects.js';
+        import { ProjectsHTMLFromOwner } from '/Data/Scripts/projects.js';
 
-        ProjectsHTMLFromURL('/Data/Projects/mine.json')
-            .then(html => document.getElementById('projects-mine').innerHTML = html);
+        const urlParams = new URLSearchParams(window.location.search);
+
+        if (urlParams.get("focus")) {
+            document.getElementById("normal").style.display = "none";
+            document.getElementById("focus").style.display = "block";
+
+            const file = urlParams.get("focus").split(".",2)[0];
+            const id = urlParams.get("focus").split(".",2)[1];
+
+            /*if (urlParams.get("from")) {} else {
+                const url = new URL(window.location.href);
+                url.searchParams.set("from", "projects");
+                window.history.pushState({}, "", url);
+                location.reload();
+            }*/
+
+            fetch(`/Data/Projects/${file}.json`)
+                .then(res => res.json())
+                .then(data => {
+
+                    data = data[id];
+
+                    data.banner = data.banner || `/Data/Images/project.${id}.banner.png`;
+                    data.icon = data.icon || `/Data/Icons/icon.${id}.svg`;
+
+                    document.getElementById("focus-banner").style.backgroundImage = `url('${data.banner}')`;
+                    document.getElementById("focus-icon").style.backgroundImage = `url('${data.icon}')`;
+                    document.getElementById("navname").textContent = `Projects > ${data.name}`;
+                    document.getElementById("focus-name").textContent = data.name;
+                    document.getElementById("focus-description").textContent = data.description;
+                });
+        } else {
+            ProjectsHTMLFromOwner('iceless')
+                .then(html => document.getElementById('projects-iceless').innerHTML = html);
         
-        ProjectsHTMLFromURL('/Data/Projects/recommended.json')
-            .then(html => document.getElementById('projects-recommended').innerHTML = html);
+            ProjectsHTMLFromOwner('recommended')
+                .then(html => document.getElementById('projects-recommended').innerHTML = html);
 
-        ProjectsHTMLFromURL('/Data/Projects/app.json')
-            .then(html => document.getElementById('projects-app').innerHTML = html);
+            ProjectsHTMLFromOwner('app')
+                .then(html => document.getElementById('projects-app').innerHTML = html);
 
-        ProjectsHTMLFromURL('/Data/Projects/peic.json')
-            .then(html => document.getElementById('projects-peic').innerHTML = html);
+            ProjectsHTMLFromOwner('peic')
+                .then(html => document.getElementById('projects-peic').innerHTML = html);
+        }
     </script>
+    <script src="Data/Scripts/back.js"></script>
 </body>
 
 </html>

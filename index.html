@@ -37,7 +37,7 @@
                 </div>
             </div>
             <h2>Here's my projects</h2>
-            <div class="projects" id="projects-mine"></div>
+            <div class="projects" id="projects-iceless"></div>
             <h2>PEIC's Projects</h2>
             <div class="projects" id="projects-peic"></div>
             <a href="projects" style="margin-top: 16px;">
@@ -98,11 +98,11 @@
         </div>
     </div>
     <script type="module">
-        import { ProjectsHTMLFromURL } from '/Data/Scripts/projects.js';
+        import { ProjectsHTMLFromOwner } from '/Data/Scripts/projects.js';
         
-        ProjectsHTMLFromURL('/Data/Projects/mine.json')
-            .then(html => document.getElementById('projects-mine').innerHTML = html);
-        ProjectsHTMLFromURL('/Data/Projects/peic.json')
+        ProjectsHTMLFromOwner('iceless')
+            .then(html => document.getElementById('projects-iceless').innerHTML = html);
+        ProjectsHTMLFromOwner('peic')
             .then(html => document.getElementById('projects-peic').innerHTML = html);
     </script>
     <script src="/Data/Scripts/copy.js"></script>
