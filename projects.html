@@ -15,7 +15,7 @@
 <body>
     <div class="navbar">
         <div id="navcontrol" class="navcontent">
-            <h4 id="navname">Projects</h4>
+            <h4>Projects</h4>
         </div>
         <a href="/">
             <div class="navexit" style="background-image: url('Data/Icons/action.exit.svg');"></div>
@@ -77,7 +77,6 @@
 
                     document.getElementById("focus-banner").style.backgroundImage = `url('${data.banner}')`;
                     document.getElementById("focus-icon").style.backgroundImage = `url('${data.icon}')`;
-                    document.getElementById("navname").textContent = `Projects > ${data.name}`;
                     document.getElementById("focus-name").textContent = data.name;
                     document.getElementById("focus-description").textContent = data.description;
                 });
