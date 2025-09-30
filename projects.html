@@ -38,13 +38,15 @@
     </div>
     <div class="content" id="focus">
         <div id="focus-banner"></div>
-        <div class="focus-icon-name">
-            <div id="focus-icon"></div>
-            <h3 id="focus-name"></h3>
-            <p id="focus-description"></p>
-        </div>
-        <div class="main-content">
-            
+        <div id="focus-content" class="main-content">
+            <div class="focus-icon-name">
+                <div id="focus-icon"></div>
+                <h3 id="focus-name"></h3>
+                <p id="focus-description"></p>
+            </div>
+            <a class="button" id="focus-url">GET</a>
+            <h4 style="margin-top: 32px;">Description</h4>
+            <div id="focus-subtitle" style="box-shadow: rgba(0,0,0,0.1) 4px 4px 4px; padding: 16px; background-color: rgba(255,255,255,0.2); border-radius: 8px;"></div>
         </div>
     </div>
     <script type="module">
@@ -79,6 +81,8 @@
                     document.getElementById("focus-icon").style.backgroundImage = `url('${data.icon}')`;
                     document.getElementById("focus-name").textContent = data.name;
                     document.getElementById("focus-description").textContent = data.description;
+                    document.getElementById("focus-url").href = data.url;
+                    document.getElementById("focus-subtitle").textContent = data.subtitle;
                 });
         } else {
             ProjectsHTMLFromOwner('iceless')

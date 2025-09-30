@@ -23,8 +23,6 @@
 }
 
 .pfp {
-    position: absolute;
-    top: -8vh;
     width: 100px;
     height: 100px;
     background-image: url("/Data/Images/banner.iceless.png");
@@ -60,6 +58,11 @@
 
 .main-content h2 {
     margin-top: 32px;
+}
+
+.main-content {
+    transform: translateY(-8vh);
+    padding-top: 0;
 }
 
 .tags {
