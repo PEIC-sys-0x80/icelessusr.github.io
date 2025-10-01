@@ -78,7 +78,7 @@
 .tag {
     height: 36px;
     background-color: black;
-    padding: 0px 12px 4px 12px;
+    padding: 4px 12px 4px 12px;
     text-justify: center;
     border-radius: 12px;
     display: flex;
