@@ -17,7 +17,6 @@
         "action": "CUSTOMIZE",
         "url": "docs?from=projects#/ArchLinux.InstallationGuide",
         "color": "#2596be",
-        "icon": "/Data/Icons/icon.archlinux.png",
         "banner": "/Data/Images/project.archlinux.banner.jpeg"
     },
     "dockur-windows": {
