@@ -45,14 +45,22 @@
                 <p id="focus-description"></p>
             </div>
             <a class="button" id="focus-url">GET</a>
-            <h4 style="margin-top: 32px;">Description</h4>
-            <div id="focus-subtitle" style="box-shadow: rgba(0,0,0,0.1) 4px 4px 4px; padding: 16px; background-color: rgba(255,255,255,0.2); border-radius: 8px;"></div>
+            <div id="focus-textover"></div>
+            <h2 style="margin-top: 32px;">Related Projects</h2>
+            <div class="projects" id="focus-related"></div>
         </div>
     </div>
     <script type="module">
         import { ProjectsHTMLFromOwner } from '/Data/Scripts/projects.js';
 
         const urlParams = new URLSearchParams(window.location.search);
+
+        function checkBackgroundImage(url, callback) {
+            const img = new Image();
+            img.onload = () => callback(true);
+            img.onerror = () => callback(false);
+            img.src = url;
+        }
 
         if (urlParams.get("focus")) {
             document.getElementById("normal").style.display = "none";
@@ -77,12 +85,21 @@
                     data.banner = data.banner || `/Data/Images/project.${id}.banner.png`;
                     data.icon = data.icon || `/Data/Icons/icon.${id}.svg`;
 
+                    checkBackgroundImage(data.banner, (success) => {
+                        if (!success) {
+                            document.getElementById("focus-banner").style.height = "10vh";
+                        }
+                    });
+
+
                     document.getElementById("focus-banner").style.backgroundImage = `url('${data.banner}')`;
                     document.getElementById("focus-icon").style.backgroundImage = `url('${data.icon}')`;
                     document.getElementById("focus-name").textContent = data.name;
                     document.getElementById("focus-description").textContent = data.description;
                     document.getElementById("focus-url").href = data.url;
-                    document.getElementById("focus-subtitle").textContent = data.subtitle;
+                    document.getElementById("focus-textover").innerHTML = `<p><strong>${data.title}: </strong>${data.subtitle}</p>`;
+                    ProjectsHTMLFromOwner(file)
+                        .then(html => document.getElementById('focus-related').innerHTML = html);
                 });
         } else {
             ProjectsHTMLFromOwner('iceless')
