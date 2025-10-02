@@ -1,0 +1,11 @@
+{
+    "minecraft": {
+        "name": "Minecraft",
+        "description": "Open World",
+        "title": "Create, Explore, Survive",
+        "subtitle": "Build anything you can imagine, uncover eerie mysteries, and survive the night in the ultimate sandbox adventure game.",
+        "action": "START JOURNAL",
+        "url": "https://minecraft.net",
+        "color": "#52a335"
+    }
+}

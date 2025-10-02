@@ -50,6 +50,7 @@
     background-position: center;
     background-size: 100% auto;
     aspect-ratio: 1;
+    border-radius: 24px;
 }
 
 #focus-name {

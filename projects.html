@@ -34,6 +34,8 @@
             <div class="projects" id="projects-recommended"></div>
             <h2 style="margin-top: 32px;">Wonderful Applications</h2>
             <div class="projects" id="projects-app"></div>
+            <h2 style="margin-top: 32px;">Games I play</h2>
+            <div class="projects" id="projects-games"></div>
         </div>
     </div>
     <div class="content" id="focus">
@@ -108,11 +110,14 @@
             ProjectsHTMLFromOwner('recommended')
                 .then(html => document.getElementById('projects-recommended').innerHTML = html);
 
-            ProjectsHTMLFromOwner('app')
+            ProjectsHTMLFromOwner('apps')
                 .then(html => document.getElementById('projects-app').innerHTML = html);
 
             ProjectsHTMLFromOwner('peic')
                 .then(html => document.getElementById('projects-peic').innerHTML = html);
+            
+            ProjectsHTMLFromOwner('games')
+                .then(html => document.getElementById('projects-games').innerHTML = html);
         }
     </script>
     <script src="Data/Scripts/back.js"></script>
