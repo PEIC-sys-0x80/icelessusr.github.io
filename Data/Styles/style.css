@@ -189,11 +189,11 @@ body {
 }
 
 .footer {
-    min-height: 80vh;
     background-color: rgba(255,255,255,0.1);
-    padding: 7vw;
     color: white;
-
+    width: 86%;
+    min-width: 66vh;
+    padding: 7%;
 }
 
 .footer-items {
