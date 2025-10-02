@@ -197,7 +197,6 @@ body {
 }
 
 .footer-items {
-    width: 100%;
     display: flex;
     gap: 16px;
     justify-content: center;
@@ -210,8 +209,6 @@ body {
     flex-direction: column;
     margin-top: 16px;
     gap: 16px;
-    width: 400px;
-    height: 100%;
 }
 
 .footer-item a {
