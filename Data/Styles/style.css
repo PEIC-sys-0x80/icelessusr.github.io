@@ -187,3 +187,33 @@ body {
     background-position: center;
     margin-right: 4px;
 }
+
+.footer {
+    min-height: 80vh;
+    background-color: rgba(255,255,255,0.1);
+    padding: 7vw;
+    color: white;
+
+}
+
+.footer-items {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 16px;
+    width: 400px;
+    height: 100%;
+}
+
+.footer-item a {
+    color: #4bc6f7;
+}
