@@ -83,6 +83,19 @@ We have to install some packages into the Root Partition for installation, run t
 pacstrap /YourDiskPartitionForRoot/MountPoint base linux-lts linux-lts-headers linux-firmware sof-firmware base-devel nano grub sudo efibootmgr networkmanager
 ```
 
+-  Also `openssh` if you need ssh.
+-  Drivers
+
+Chip|Packages
+-|-
+Intel iGPU|`mesa vulkan-intel lib32-mesa lib32-vulkan-intel vulkan-icd-loader intel-media-driver libva-utils`
+Intel Arc|`mesa vulkan-intel lib32-mesa lib32-vulkan-intel libva-intel-driver intel-media-driver`
+AMD iGPU/dGPU|`mesa libva-mesa-driver mesa-vdpau vulkan-radeon xf86-video-amdgpu`
+QEMU via virtio-vga-gl|`mesa mesa-utils vulkan-radeon xf86-video-vesa`
+Nvidia Any|`nvidia-dkms nvidia-prime`
+Nvidia New (open source) >= 3050|`nvidia-open-dkms nvidia-prime`
+
+
 This will take a long time processing, please wait for it and keep the network connected.
 
 ## 8. Make fstab File
@@ -176,7 +189,7 @@ To enable Network Manager:
 systemctl enable NetworkManger
 ```
 
-To enable ssh:
+To enable ssh if needed:
 
 ```bash
 systemctl enable sshd
@@ -198,7 +211,28 @@ You can custom your hostname by:
 echo "YourHost" > /etc/hostname
 ```
 
-### 9-7. Install UEFI and GRUB
+### 9-7 Time Zone
+List available timezones
+```bash
+timedatectl list-timezone
+```
+
+Set one
+```bash
+timedatectl set-timezone Your/Timezone
+```
+
+Setup auto sync
+```bash
+timedatectl set-ntp true
+```
+
+If not working
+```bash
+systemctl enable systemd-timesyncd
+```
+
+### 9-8. Install UEFI and GRUB
 
 To install GRUB manually:
 
@@ -218,7 +252,7 @@ Now, make GRUB config file:
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-### 9-8. Exit chroot
+### 9-9. Exit chroot
 
 To exit chroot environment:
 

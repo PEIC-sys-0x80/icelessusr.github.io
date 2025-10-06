@@ -1,4 +1,4 @@
-async function ProjectHTML(name, description, title, subtitle, action, url, iconPath, bannerPath, color) {    
+async function ProjectHTML(name, description, title, subtitle, action, infourl, url, iconPath, bannerPath, color) {    
     return `
         <div class="project" style="background-color: ${color}">
             <div class="project-filter" style="background-image: linear-gradient(45deg, ${color}, rgba(0,0,0,0) 70%);"></div>
@@ -28,7 +28,8 @@ async function ProjectsHTML(projects, owner) {
             project.title,
             project.subtitle,
             project.action,
-            owner ? `projects?focus=${owner}.${id}&from=projects` : project.url,
+            project.infourl || project.url,
+            project.url,
             project.icon || `/Data/Icons/icon.${id}.svg`,
             project.banner || `/Data/Images/project.${id}.banner.png`,
             project.color
