@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,19 @@
     <link rel="stylesheet" href="/Data/Styles/projects.css">
     <link rel="stylesheet" href="/Data/Styles/animation.css">
 </head>
+
 <body>
     <div class="content">
-        <div class="banner"><div class="banner-blur"></div></div>
+        <div class="banner">
+            <div class="banner-blur"></div>
+        </div>
         <div class="under-banner"></div>
         <div class="main-content">
             <div class="pfp"></div>
             <h1 class="name">Iceless</h1>
-            <p class="description">Nice to meet you, I'm now learning Swift, Python, HTML, CSS, JavaScript, Minecraft Mods, English, Japanese, hosting a Minecraft Server, a File Server, some Websites and a Research Center, welcome to join. For more information, please see the following content.</p>
+            <p class="description">Nice to meet you, I'm now learning Swift, Python, HTML, CSS, JavaScript, Minecraft
+                Mods, English, Japanese, hosting a Minecraft Server, a File Server, some Websites and a Research Center,
+                welcome to join. For more information, please see the following content.</p>
             <div class="tags">
                 <div class="tag" style="background-color: #2E8D22;">
                     <div style="background-image: url('/Data/Icons/tag.developer.svg');"></div>
@@ -62,7 +68,8 @@
                     <div class="contact-area">
                         <div class="code-area">
                             <code>iceless.usr@gmail.com</code>
-                            <a href="#" class="copy-btn" style="background-image: url('/Data/Icons/action.copy.svg');" onclick="copy('iceless.usr@gmail.com'); return false;" title="Copy"></a>
+                            <a href="#" class="copy-btn" style="background-image: url('/Data/Icons/action.copy.svg');"
+                                onclick="copy('iceless.usr@gmail.com'); return false;" title="Copy"></a>
                         </div>
                     </div>
                 </div>
@@ -72,9 +79,12 @@
                     <div class="contact-area">
                         <div class="code-area">
                             <code>icelessusr</code>
-                            <a href="#" class="copy-btn" style="background-image: url('/Data/Icons/action.copy.svg');" onclick="copy('icelessusr'); return false;" title="Copy"></a>
+                            <a href="#" class="copy-btn" style="background-image: url('/Data/Icons/action.copy.svg');"
+                                onclick="copy('icelessusr'); return false;" title="Copy"></a>
                         </div>
-                        <a href="/r?n=mygithub" class="contact-link"><h4>View</h4></a>
+                        <a href="/r?n=mygithub" class="contact-link">
+                            <h4>View</h4>
+                        </a>
                     </div>
                 </div>
                 <div class="contact" style="background-color: #50C800;">
@@ -83,9 +93,12 @@
                     <div class="contact-area">
                         <div class="code-area">
                             <code>IcelessUsr</code>
-                            <a href="#" class="copy-btn" style="background-image: url('/Data/Icons/action.copy.svg');" onclick="copy('IcelessUsr'); return false;" title="Copy"></a>
+                            <a href="#" class="copy-btn" style="background-image: url('/Data/Icons/action.copy.svg');"
+                                onclick="copy('iceless.usr'); return false;" title="Copy"></a>
                         </div>
-                        <a href="/r?n=myduolingo" class="contact-link"><h4>View</h4></a>
+                        <a href="/r?n=myduolingo" class="contact-link">
+                            <h4>View</h4>
+                        </a>
                     </div>
                 </div>
                 <div class="contact" style="background-color: #5865F2;">
@@ -94,9 +107,26 @@
                     <div class="contact-area">
                         <div class="code-area">
                             <code>iceless.usr</code>
-                            <a href="#" class="copy-btn" style="background-image: url('/Data/Icons/action.copy.svg');" onclick="copy('iceless.usr'); return false;" title="Copy"></a>
+                            <a href="#" class="copy-btn" style="background-image: url('/Data/Icons/action.copy.svg');"
+                                onclick="copy('iceless.usr'); return false;" title="Copy"></a>
                         </div>
-                        <a href="/r?n=mydc" class="contact-link"><h4>View</h4></a>
+                        <a href="/r?n=mydc" class="contact-link">
+                            <h4>View</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact" style="background-color: #ac396d;">
+                    <div class="contact-icon" style="background-image: url('/Data/Icons/icon.osu.svg');"></div>
+                    <h4>osu!</h4>
+                    <div class="contact-area">
+                        <div class="code-area">
+                            <code>iceless.usr</code>
+                            <a href="#" class="copy-btn" style="background-image: url('/Data/Icons/action.copy.svg');"
+                                onclick="copy('iceless_usr'); return false;" title="Copy"></a>
+                        </div>
+                        <a href="/r?n=myosu" class="contact-link">
+                            <h4>View</h4>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -108,23 +138,18 @@
             <p>Copied to clipboard!</p>
         </div>
     </div>
-    <!-- <div class="footer">
-        <h1 class="footer-title">Iceless</h1>
-        <div class="footer-items"></div>
-            <div class="footer-item">
-                <h2>Social</h2>
-                <a href="r?n=mydc">Discord</a>
-                <a href="r?n=myduolingo">Duolingo</a>
-                <a href="r?n=mygithub">Github</a>
-                <a href="r?n=myfb">Facebook</a>
-                <a href="r?n=myig">Instagram</a>
-                <a href="r?n=myth">Threads</a>
-            </div>
-        </div>
-    </div> -->
+    <footer class="footer" id="footer">
+    </footer>
+    <script>
+        fetch("/footer.txt")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
     <script type="module">
         import { ProjectsHTMLFromOwner } from '/Data/Scripts/projects.js';
-        
+
         ProjectsHTMLFromOwner('iceless')
             .then(html => document.getElementById('projects-iceless').innerHTML = html);
         ProjectsHTMLFromOwner('peic')
@@ -132,4 +157,5 @@
     </script>
     <script src="/Data/Scripts/copy.js"></script>
 </body>
+
 </html>
