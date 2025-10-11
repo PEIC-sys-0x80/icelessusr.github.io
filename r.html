@@ -8,12 +8,12 @@
 <body>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        if (data) {
-        fetch("r.json")
-            .then(response => response.json())
-            .then(data => {
-                window.location.href = data[urlParams.get("n")]
-            });
+        if (urlParams.get("n")) {
+            fetch("r.json")
+                .then(response => response.json())
+                .then(data => {
+                    window.location.href = data[urlParams.get("n")]
+                });
         } else {
             window.location.href = "/"
         }
