@@ -54,6 +54,14 @@ code-test
 
 `single code-test2`
 
+$Latex^{測試}$
+
+$$
+e^i
+$$
+
+
+$yeee_{xxx}$
 
 
 [測試連結](http://www.google.com)

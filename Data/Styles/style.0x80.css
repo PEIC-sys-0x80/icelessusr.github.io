@@ -322,7 +322,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: var(--body-bg) ;
+  background-color: var(--body-bg) !important;
   color: var(--body-color);
 }
 
@@ -1632,3 +1632,5 @@ body {
 }
 
 */
+
+/*yeeeeeeeee*/
