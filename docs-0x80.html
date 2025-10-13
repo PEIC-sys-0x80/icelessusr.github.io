@@ -11,6 +11,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="./Data/Styles/style.0x80.css">
+
 </head>
 <body>
   <div class="navbar">
@@ -34,9 +35,56 @@
       auto2top: false,
       homepage: 'Docs.Home.0x80.md',
       basePath: '/Data/Docs.0x80'
-    }
-  </script>
+
+    };
+      // =================================================================
+  // 新增: 自訂 KaTeX 渲染 Docsify 插件 (解決 docsify-katex 不工作的問題)
+  // =================================================================
   
+  // 檢查 autoRender 函數是否存在 (auto-render.min.js 載入後會提供此函數)
+  function tryRenderMath() {
+      // 確保 KaTeX 及其 auto-render 插件已載入
+      if (typeof renderMathInElement === 'undefined') {
+          console.warn('KaTeX auto-render 插件尚未載入。無法渲染數學公式。');
+          return;
+      }
+      
+      // 獲取 Docsify 的主要內容區塊 (Docsify 通常將內容渲染到 ID 為 'main' 或 'app' 的 div 中)
+      const contentElement = document.getElementById('app') || document.querySelector('.content');
+
+      if (contentElement) {
+          // 呼叫 KaTeX 的 auto-render 函數，渲染指定元素內的所有公式
+          renderMathInElement(contentElement, {
+              // 配置 KaTeX 公式定界符 (與 Markdown 語法對應)
+              delimiters: [
+                  // $$ block $$
+                  {left: '$$', right: '$$', display: true},
+                  // $ inline $
+                  {left: '$', right: '$', display: false},
+                  // 也可以考慮加入 LaTeX 語法中的 \[ \] 和 \( \)
+                  {left: '\\[', right: '\\]', display: true},
+                  {left: '\\(', right: '\\)', display: false}
+              ],
+              throwOnError: false // 避免渲染失敗時拋出錯誤
+          });
+      }
+  }
+
+  // 將自訂邏輯掛載到 Docsify 插件列表
+  window.$docsify.plugins = [].concat(window.$docsify.plugins || [], [
+      function (hook, vm) {
+          // 在每次 Markdown 內容載入並轉換為 HTML 之後執行
+          hook.doneEach(function() {
+              tryRenderMath();
+          });
+      }
+  ]);
+  
+  // =================================================================
+  </script>
+  <script src="./Data/Scripts.0x80/katex.min.js"></script>
+  <script src="./Data/Scripts.0x80/auto-render.min.js"></script>
+
   <script src="./Data/Scripts.0x80/docsify.js"></script>
   <script src="./Data/Scripts.0x80/themeswitch.js"></script>
   <script type="text/javascript" color="103, 141, 221" opacity="3" zIndex="-2" count="400" src="./Data/Scripts.0x80/canvas-nest.min.js"></script>
