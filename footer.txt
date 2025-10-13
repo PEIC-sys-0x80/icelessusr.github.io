@@ -1,0 +1,41 @@
+<div class="footer-container">
+    <div class="row">
+        <div class="footer-col">
+            <h4>Soical</h4>
+            <ul class="footer-ul">
+                <li><a href="/r?n=mydc">Discord</a></li>
+                <li><a href="/r?n=myfb">Facebook</a></li>
+                <li><a href="/r?n=myig">Instagram</a></li>
+                <li><a href="/r?n=myth">Threads</a></li>
+                <li><a href="/r?n=mygithub">Github</a></li>
+                <li><a href="/r?n=myosu">osu!</a></li>
+                <li><a href="/r?n=myduolingo">Duolingo</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>My stuffs</h4>
+            <ul class="footer-ul">
+                <li><a href="/r?n=icethisrc">IceThis Research Center</a></li>
+                <li><a href="/projects?focus=iceless.docs">Iceless Docs</a></li>
+                <li><a href="/projects?focus=iceless.badice">Badice</a></li>
+                <li><a href="/projects?focus=iceless.watercup">Watercup Server</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Wonderful things</h4>
+            <ul class="footer-ul">
+                <li><a href="/projects?focus=recommended.archlinux">Arch Linux</a></li>
+                <li><a href="/r?n=a">Apple</a></li>
+                <li><a href="/r?n=hyprland">Hyprland</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Pages</h4>
+            <ul class="footer-ul">
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/eatkano">EatKano</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
