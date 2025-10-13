@@ -5,7 +5,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
         // https://developer.mozilla.org/zh-CN/docs/Web/API/Navigator/language
         
         const LANGUAGES = [
-            { regex: /^zh\b/, lang: 'zh' },
+            { regex: /^zh\b/, lang: 'tw' },
             { regex: /^ja\b/, lang: 'ja' },
             { regex: /.*/, lang: 'en'}
         ]
@@ -18,7 +18,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             method: 'GET',
             async: false,
             success: data => res = data,
-            error: () => alert('找不到语言文件: ' + lang)
+            error: () => alert("can't fined the lang-file: " + lang)
         }).responseJSON
     }
 
