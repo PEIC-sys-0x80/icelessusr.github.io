@@ -87,13 +87,28 @@ exit
 ```
 
 
-## 7.初始化 Arch Linux
+## 7.安裝 Arch Linux
 
 現在我們需要將一些包安裝進root分區的根目錄中，執行以下指令來安裝:
 
 ```bash
 pacstrap /YourDiskPartitionForRoot/MountPoint base linux-lts linux-lts-headers linux-firmware sof-firmware base-devel nano grub sudo efibootmgr networkmanager
 ```
+
+>如果你需要ssh，可以安裝 `openssh`
+
+**常用的顯示驅動**:
+晶片|包
+-|-
+Intel iGPU|`mesa vulkan-intel lib32-mesa lib32-vulkan-intel vulkan-icd-loader intel-media-driver libva-utils`
+Intel Arc|`mesa vulkan-intel lib32-mesa lib32-vulkan-intel libva-intel-driver intel-media-driver`
+AMD iGPU/dGPU|`mesa libva-mesa-driver mesa-vdpau vulkan-radeon xf86-video-amdgpu`
+QEMU via virtio-vga-gl|`mesa mesa-utils vulkan-radeon xf86-video-vesa`
+Nvidia Any|`nvidia-dkms nvidia-prime`
+Nvidia New (open source) >= 3050|`nvidia-open-dkms nvidia-prime`
+
+
+
 
 執行之後，可能需要較長的時間處理，請等待它處理完成，並全程保持網路連線。
 
@@ -191,7 +206,7 @@ EDITOR=nano visudo
 systemctl enable NetworkManger
 ```
 
-啟用ssh:
+啟用ssh(如果你需要的話):
 
 ```bash
 systemctl enable sshd
@@ -213,7 +228,29 @@ pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils
 echo "YourHost" > /etc/hostname
 ```
 
-### 9-7 安裝UEFI與GRUB引導
+### 9-7 時區設定
+列出可用的時區
+```bash
+timedatectl list-timezone
+```
+
+然後設定你的時區
+```bash
+timedatectl set-timezone Your/Timezone
+```
+
+設定自動時間同步
+```bash
+timedatectl set-ntp true
+```
+
+如果沒效就用這個
+```bash
+systemctl enable systemd-timesyncd
+```
+
+
+### 9-8 安裝UEFI與GRUB引導
 
 手動安裝 GRUB:
 
