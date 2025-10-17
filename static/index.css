@@ -90,7 +90,7 @@ body {
 
 
 #welcome {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(24, 61, 163, 0.384);
     text-align: center;
     font-weight: bold;
     overflow: hidden;
@@ -110,9 +110,9 @@ body {
 #GameTimeLayer {
     top: 1em;
     left: 0;
-    width: 100%;
+    width: 50%;
     text-align: center;
-    color: rgb(233, 138, 131);
+    color: rgba(131, 201, 233, 0.582);
     font-size: 4em;
     text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
     overflow: hidden;
@@ -192,7 +192,7 @@ body {
 }
 
 .bad {
-    background-color: rgb(211, 91, 91);
+    background-color: rgb(187, 13, 13);
     -webkit-animation: flash .2s 3;
     animation: flash .2s 3;
 }

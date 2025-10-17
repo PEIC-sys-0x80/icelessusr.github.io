@@ -18,7 +18,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             method: 'GET',
             async: false,
             success: data => res = data,
-            error: () => alert('找不到语言文件: ' + lang)
+            error: () => alert("can't fined the lang-file: " + lang)
         }).responseJSON
     }
 
@@ -182,15 +182,15 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
 
     function gameInit() {
         createjs.Sound.registerSound({
-            src: "./static/music/err.mp3",
+            src: "./static/music/err.wav",
             id: "err"
         });
         createjs.Sound.registerSound({
-            src: "./static/music/end.mp3",
+            src: "./static/music/end.wav",
             id: "end"
         });
         createjs.Sound.registerSound({
-            src: "./static/music/tap.mp3",
+            src: "./static/music/tap.wav",
             id: "tap"
         });
         gameRestart();
