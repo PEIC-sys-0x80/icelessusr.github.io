@@ -5,7 +5,7 @@
         "title": "Your Another Home",
         "subtitle": "Watercup Server runs for players which are friends to each other",
         "action": "GET STARTED",
-        "url": "watercup?from=projects",
+        "url": "watercup.html?from=projects",
         "color": "#237488"
     },
     "badice": {
@@ -14,7 +14,7 @@
         "title": "No More Tabs",
         "subtitle": "Badice collects a lot of files, packages, you don't have to spend your time searching anymore",
         "action": "TRY NOW",
-        "url": "badice?from=projects",
+        "url": "badice.html?from=projects",
         "color": "#000000"
     },
     "docs": {
@@ -23,7 +23,7 @@
         "title": "The Next Level of Docs",
         "subtitle": "Read the most detail docs to start learning something in a suprt-fast and powerful way",
         "action": "GET STARTED",
-        "url": "docs?from=projects",
+        "url": "docs.html?from=projects",
         "color": "#BF00FF"
     }
 }
