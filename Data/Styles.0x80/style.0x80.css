@@ -474,10 +474,9 @@ h1,h2,h3,h4,h5,h6,
 
 strong {
   font-family: Arial, sans-serif;
-  border-radius: 8px;
+  border-radius: 5px;
   margin: 0 auto;
   font-weight:bold;
-  padding: 20px;
   color: var(--strong-color);
 }
 
