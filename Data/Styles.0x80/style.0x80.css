@@ -1006,6 +1006,7 @@ transform: scale(1.05);
 .sidebar-toggle {
   background-color: transparent;
   background-color: var(--navbar-color);
+  backdrop-filter: blur(2px);
   border: 0;
   outline: none;
   padding: 10px;
