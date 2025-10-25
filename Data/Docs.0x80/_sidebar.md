@@ -10,7 +10,7 @@
 
 - **程式語言常用語法**
     - [C++基本語法](programing-L/cpp.md)
-    - [C語言基本語法](programing-L/c.md)
+    - [C語言基本語法](programing-L/C-l.md)
     - [Latex語法](programing-L/LaTex.md)
 - **各種linux指令**
     - [systemctl](terminal-command/systemctl.md)

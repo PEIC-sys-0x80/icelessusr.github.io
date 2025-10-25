@@ -98,6 +98,7 @@ pacstrap /YourDiskPartitionForRoot/MountPoint base linux-lts linux-lts-headers l
 >如果你需要ssh，可以安裝 `openssh`
 
 **常用的顯示驅動**:
+
 晶片|包
 -|-
 Intel iGPU|`mesa vulkan-intel lib32-mesa lib32-vulkan-intel vulkan-icd-loader intel-media-driver libva-utils`
@@ -106,8 +107,6 @@ AMD iGPU/dGPU|`mesa libva-mesa-driver mesa-vdpau vulkan-radeon xf86-video-amdgpu
 QEMU via virtio-vga-gl|`mesa mesa-utils vulkan-radeon xf86-video-vesa`
 Nvidia Any|`nvidia-dkms nvidia-prime`
 Nvidia New (open source) >= 3050|`nvidia-open-dkms nvidia-prime`
-
-
 
 
 執行之後，可能需要較長的時間處理，請等待它處理完成，並全程保持網路連線。
