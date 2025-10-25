@@ -546,7 +546,7 @@ echo "YourHost" > /etc/hostname
 ### 9-7 時區設定
 列出可用的時區
 ```bash
-timedatectl list-timezone
+timedatectl list-timezones
 ```
 
 然後設定你的時區
