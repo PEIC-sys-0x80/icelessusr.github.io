@@ -9,7 +9,7 @@
 ## 2.燒錄
 ### 2-1.打開樹梅派系統映像燒錄器
 
-![[Raspberry Pi-imager.png]]
+![Raspberry Pi-imager.png](../DocAttachments.0x80/ef320x/Raspberry-Pi-imager.png)
 
 
 
