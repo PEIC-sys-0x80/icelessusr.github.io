@@ -1,12 +1,12 @@
-async function ProjectHTML(name, description, title, subtitle, action, infourl, url, iconPath, bannerPath, color) {    
+async function ProjectHTML(name, description, title, subtitle, action, infourl, url, iconPath, bannerPath, color, from) {    
     return `
         <div class="project" style="background-color: ${color}">
             <div class="project-filter" style="background-image: linear-gradient(45deg, ${color}, rgba(0,0,0,0) 70%);"></div>
-            <a href="${infourl}" class="project-title-area">
-                <h5 class="project-action">${action}</h5>
-                <h1 class="project-title">${title}</h1>
-                <h5 class="project-subtitle">${subtitle}</h5>
-            </a>
+                <a href="${infourl}&from=${from}" class="project-title-area">
+                    <h5 class="project-action">${action}</h5>
+                    <h1 class="project-title">${title}</h1>
+                    <h5 class="project-subtitle">${subtitle}</h5>
+                </a>
             <div class="project-banner" style="background-image: url('${bannerPath}')"></div>
             <div class="project-bottom">
                 <div class="project-icon" style="background-image: url('${iconPath}');"></div>
@@ -18,7 +18,7 @@ async function ProjectHTML(name, description, title, subtitle, action, infourl, 
     `;
 }
 
-async function ProjectsHTML(projects, owner) {
+async function ProjectsHTML(projects, owner, from="") {
     let html = '';
     for (const id in projects) {
         const project = projects[id];
@@ -32,7 +32,8 @@ async function ProjectsHTML(projects, owner) {
             project.url,
             project.icon || `/Data/Icons/icon.${id}.svg`,
             project.banner || `/Data/Images/project.${id}.banner.png`,
-            project.color
+            project.color,
+            from || "projects"
         );
     }
     return html;
@@ -44,10 +45,10 @@ async function ProjectsHTMLFromURL(url) {
         .then(projects => ProjectsHTML(projects));
 }
 
-async function ProjectsHTMLFromOwner(owner) {
+async function ProjectsHTMLFromOwner(owner, from) {
     return await fetch(`/Data/Projects/${owner}.json`)
         .then(response => response.json())
-        .then(projects => ProjectsHTML(projects, owner));
+        .then(projects => ProjectsHTML(projects, owner, from));
 }
 
 export { ProjectsHTMLFromURL, ProjectsHTMLFromOwner };
