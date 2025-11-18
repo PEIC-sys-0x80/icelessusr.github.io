@@ -26,7 +26,7 @@
   
   --navbar-color: rgba(131, 152, 248, 0.295);
 
-  --sidebar-bg: #1dcceb4f;
+  --sidebar-bg: #1da0eb1e;
   --sidebar-color: rgb(164, 119, 236);
   --sidebar-sub: rgb(41, 38, 216);
   --sidebar-tea: rgb(100, 49, 194);
@@ -74,9 +74,9 @@
   --tag-b-c: #1ed0d6b6;
 
     /*card-color*/
-    --business-card-container-bg: #3aaadd91;
+    --business-card-container-bg: #67cfff4b;
     --business-card-container-border: #45bbd8;
-    --avatar-image-border: #828af3;
+    --avatar-image-border: #9382f3;
     --name-color: #111827;
     --bio-color: #4b5563;
     /*card-color*/
@@ -106,7 +106,6 @@
   --github-corner-svg-c: #3f3f3f;
   --github-corner-svg-fill: #ea6f5a;
   
-  --body-close-sidebar-toggle-bg-c: rgba(63,63,63,0.8);
   
   --section-cover-has-mask-bg-c: #3f3f3f;
   
@@ -187,8 +186,8 @@
   --tag-b-c: rgba(88, 34, 158, 0.651);
 
   /*card-color*/
-  --business-card-container-bg: #6f16d470;
-  --business-card-container-border: #54099b;
+  --business-card-container-bg: #7937f580;
+  --business-card-container-border: #776ef77c;
   --avatar-image-border: #4d76e6;
   --name-color: #111827;
   --bio-color: #4b5563;
@@ -220,7 +219,6 @@
   --github-corner-svg-c: #3f3f3f;
   --github-corner-svg-fill: #ea6f5a;
   
-  --body-close-sidebar-toggle-bg-c: rgba(63,63,63,0.8);
   
   --section-cover-has-mask-bg-c: #3f3f3f;
   
@@ -250,6 +248,7 @@
       max-width: 584px; /*最大寬度*/
       width: 100%;
       border: 1px solid var(--business-card-container-border);
+      backdrop-filter: blur(1px); /*半透明背景效果*/
       transition-property: transform;
       transition-duration: 300ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1293,7 +1292,7 @@ body.close .content {
     transform: translateX(300px);
   }
   body.close .sidebar-toggle {
-    background-color: var(--body-close-sidebar-toggle-bg-c);
+    background-color: var(--navbar-color);
     transition: 1s background-color;
     width: 284px;
     padding: 10px;
