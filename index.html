@@ -150,9 +150,9 @@
     <script type="module">
         import { ProjectsHTMLFromOwner } from '/Data/Scripts/projects.js';
 
-        ProjectsHTMLFromOwner('iceless')
+        ProjectsHTMLFromOwner('iceless', "/")
             .then(html => document.getElementById('projects-iceless').innerHTML = html);
-        ProjectsHTMLFromOwner('peic')
+        ProjectsHTMLFromOwner('peic', "/")
             .then(html => document.getElementById('projects-peic').innerHTML = html);
     </script>
     <script src="/Data/Scripts/copy.js"></script>
