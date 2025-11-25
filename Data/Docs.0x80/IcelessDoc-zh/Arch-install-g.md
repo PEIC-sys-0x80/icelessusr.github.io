@@ -252,7 +252,7 @@ pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils
 你可以用以下指令自訂主機名稱:
 
 ```bash
-echo "YourHost" > /etc/hostnames
+echo "YourHost" > /etc/hostname
 ```
 
 ### 9-7 時區設定
