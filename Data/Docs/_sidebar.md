@@ -8,4 +8,4 @@
 * Apple ecosystem
   * [SideStore Installation Guide](apple-eco/installation.SideStore.md)
 * Windows
-  * [Install Windows](windows/installation.windows.md)
+  * [Install Windows](windows/installation.Windows.md)
