@@ -1,8 +1,11 @@
-* [Home](Docs.Home.md)
+* [Home](docs.Home.md)
 * Arch Linux
-  * [Installation Guide](ArchLinux.InstallationGuide.md)
-  * [Customizing](ArchLinux.Customizing.md)
-* iOS / iPadOS
-  * [SideStore Installation Guide](iOS.SideStoreInstallationGuide.md)
+  * [Install ArchLinux](archlinux/installation.ArchLinux.md)
+  * [Install Yay](archlinux/installation.Yay.md)
+  * [Install Fcitx5](archlinux/installation.Fcitx5.md)
+  * [Install NotoFonts](archlinux/installation.NotoFonts.md)
+  * [Install StableDiffusion](archlinux/installation.StableDiffusion.md)
+* Apple ecosystem
+  * [SideStore Installation Guide](apple-eco/installation.SideStore.md)
 * Windows
-  * [Installation Guide](Windows.InstallationGuide.md)
+  * [Install Windows](windows/installation.windows.md)
