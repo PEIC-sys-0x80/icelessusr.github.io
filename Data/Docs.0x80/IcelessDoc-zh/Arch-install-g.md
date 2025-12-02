@@ -1,7 +1,6 @@
-# Arch Linux 安裝指南(中文版)
+# Arch Linux 安裝指南
 
-#ArchLinux #Linux
-
+#ArchLinux #Linux #iceless
 >**此文件翻譯自IcelessDocs。**
 >
 >譯者: 靛夜子洛 (PEIC_sys_0x80)
@@ -27,11 +26,13 @@
 2. **Swap分區**,可根據需要來設定大小，或是不使用
 3. **Root分區**，至少4GB。
 
-設定完成之後，輸入以下指令將這些設定寫入硬碟:
+你可以使用以下指令來進行設定，並在設定完成之後寫入硬碟:
 
 ```bash
 cfdisk  /dev/YourDisk
 ```
+
+> 如果你不知道你的硬碟有哪些，可以使用`lsblk`來查看目前你電腦上已安裝的所有硬碟。
 
 ## 4. 格式化分區
 
@@ -102,7 +103,7 @@ pacstrap /YourDiskPartitionForRoot/MountPoint base linux-lts linux-lts-headers l
 晶片|包
 -|-
 Intel iGPU|`mesa vulkan-intel lib32-mesa lib32-vulkan-intel vulkan-icd-loader intel-media-driver libva-utils`
-Intel Arc|`mesa vulkan-intel lib32-mesa lib32-vulkan-intel libva-intel-driver intel-media-driver`
+Intel Arc|`mesa vulkan-intel [lib32-mesa lib32-vulkan-intel] libva-intel-driver intel-media-driver`
 AMD iGPU/dGPU|`mesa libva-mesa-driver mesa-vdpau vulkan-radeon xf86-video-amdgpu`
 QEMU via virtio-vga-gl|`mesa mesa-utils vulkan-radeon xf86-video-vesa`
 Nvidia Any|`nvidia-dkms nvidia-prime`
@@ -111,9 +112,36 @@ Nvidia New (open source) >= 3050|`nvidia-open-dkms nvidia-prime`
 
 執行之後，可能需要較長的時間處理，請等待它處理完成，並全程保持網路連線。
 
+### 7-1 找不到 `lib32-mesa` 與 `lib32-vulkan-intel` 的解決方案 
+
+![arch-ins-error-1.png](../../DocAttachments.0x80/3ACA48/arch-ins-error-1.png)
+
+如果你在安裝相關驅動時遇到`lib32-mesa`與`lib32-vulkan-intel`找不到的情況(如上圖)，請依照以下步驟操作來解決:
+
+
+首先，用編輯器打開`/etc/pacman.conf`:
+```bash
+nano /etc/pacman.conf
+```
+
+然後往下滑到最下面，找到:
+```
+# [multilib]
+# Include = /etc/pacman.d/mirrorlist
+```
+
+把它註解符號拔掉:
+```
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
+
+然後存檔並關閉編輯器(如果你使用nano，先使用`Ctrl`+`O`,`Enter`儲存文件，然後`Ctrl`+`X`關閉)。
+
 ## 8.製作 `fstab` 文件
 
-接下來就是安裝Linux最關鍵的一步: 手搓 `fstab` 文件，這個 `fstab` 文件的主要作用就是定義系統開機時如何掛載開機所需的磁區，如果這個文件出錯了，可能會導致系統無法啟動。當然也可以透過這個文件實現netboot等進階操作。
+接下來就是安裝Linux最關鍵的一步: 生成 `fstab` 文件。
+`fstab` 文件的主要作用就是定義系統開機時如何掛載開機所需的磁區，如果這個文件出錯了，可能會導致系統無法啟動。當然也可以透過這個文件實現netboot等進階操作。
 
 要搓這個`fstab`文件，我們首先需要掛載所有需要的分區。 
 
@@ -213,7 +241,7 @@ systemctl enable sshd
 
 ### 9-5 Nvidia 圖形驅動程式
 
-如果有裝Nvidia顯示卡，請執行以下指令安裝Nvidia圖形驅動:
+如果有裝Nvidia顯示卡，請執行以下指令安裝Nvidia圖形驅動，如果你在安裝階段就一起裝了的話則可以跳過:
 
 ```bash
 pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils
@@ -230,13 +258,18 @@ echo "YourHost" > /etc/hostname
 ### 9-7 時區設定
 列出可用的時區
 ```bash
-timedatectl list-timezone
+timedatectl list-timezones
 ```
 
 然後設定你的時區
 ```bash
 timedatectl set-timezone Your/Timezone
 ```
+
+>如果以上不起作用，可以嘗試使用:
+>```
+>ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+>```
 
 設定自動時間同步
 ```bash
@@ -295,3 +328,5 @@ reboot
 ```bash
 nmcli device wifi connect "SSID" password "PASSWORD"
 ```
+
+
