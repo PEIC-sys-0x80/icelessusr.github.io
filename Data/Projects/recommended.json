@@ -5,7 +5,7 @@
         "title": "No AltServer Anymore",
         "subtitle": "SideStore is a fork of AltStore but no longer requires PC to refresh/install .ipa files.",
         "action": "GET STARTED",
-        "url": "docs?from=projects#/iOS.SideStoreInstallationGuide",
+        "url": "docs?from=projects#/apple-eco/installation.SideStore.md",
         "color": "#889efd",
         "icon": "/Data/Icons/icon.sidestore.jpg"
     },
@@ -15,7 +15,7 @@
         "title": "The New Generation to Linux",
         "subtitle": "Arch Linux is lightweight linux distro with rolling package system, fully customized installation.",
         "action": "CUSTOMIZE",
-        "url": "docs?from=projects#/ArchLinux.InstallationGuide",
+        "url": "docs?from=projects#/archlinux/installation.ArchLinux.md",
         "color": "#2596be",
         "banner": "/Data/Images/project.archlinux.banner.jpeg"
     },
