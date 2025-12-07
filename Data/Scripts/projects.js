@@ -33,7 +33,7 @@ async function ProjectsHTML(projects, owner, from="") {
             project.icon || `/Data/Icons/icon.${id}.svg`,
             project.banner || `/Data/Images/project.${id}.banner.png`,
             project.color,
-            from || "projects"
+            from || "/projects"
         );
     }
     return html;
