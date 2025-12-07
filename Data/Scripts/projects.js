@@ -28,7 +28,7 @@ async function ProjectsHTML(projects, owner, from="") {
             project.title,
             project.subtitle,
             project.action,
-            project.infourl || `projects?focus=${owner}.${id}`,
+            project.infourl || `/projects/?focus=${owner}.${id}`,
             project.url,
             project.icon || `/Data/Icons/icon.${id}.svg`,
             project.banner || `/Data/Images/project.${id}.banner.png`,
