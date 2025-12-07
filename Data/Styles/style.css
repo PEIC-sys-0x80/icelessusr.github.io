@@ -5,6 +5,10 @@ body {
     font-family: "SF Pro Display";
 }
 
+code {
+    font-family: "SF Mono"
+}
+
 * {
     text-decoration: none;
 }
