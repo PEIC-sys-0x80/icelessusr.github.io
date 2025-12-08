@@ -9,7 +9,7 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get("n")) {
-            fetch("r.json")
+            fetch("/Data/r.json")
                 .then(response => response.json())
                 .then(data => {
                     window.location.href = data[urlParams.get("n")]
