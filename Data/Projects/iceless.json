@@ -2,10 +2,10 @@
     "watercup": {
         "name": "Watercup Server",
         "description": "Minecraft Server",
-        "title": "Your Another Home",
+        "title": "Explore, hang out, together",
         "subtitle": "Watercup Server runs for players which are friends to each other",
         "action": "GET STARTED",
-        "url": "watercup.html?from=projects",
+        "url": "http://watercup.ddns.net/",
         "color": "#237488"
     },
     "badice": {
