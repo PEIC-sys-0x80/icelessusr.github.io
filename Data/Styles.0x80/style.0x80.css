@@ -323,6 +323,11 @@ body {
   padding: 20px;
   background-color: var(--body-bg) !important;
   color: var(--body-color);
+
+  
+  /*background-image: url("style.jpg");*/ /*背景圖片*/
+  /*background-repeat: repeat;*/   /* 預設其實就是 repeat */
+  
 }
 
 #chhh {
